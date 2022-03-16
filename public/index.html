@@ -11,6 +11,7 @@
 <meta name="turbolinks-cache-control" content="no-cache">
 <link href="/assets/logo/favicon-eb41b93a78767eb1a1be09c9cc5b41f81d627606913795d6c5be9e95549f0997.png" rel="shortcut icon" />
 <link href="/assets/logo/logo-square-bg-97bdcd98ba4d267e0d6a7964ae6f0f38a2730095412c89d7e8dc9791009a6243.png" rel="apple-touch-icon" />
+<script src="https://kit.fontawesome.com/a536a00b24.js" crossorigin="anonymous"></script>
 
 <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="hQu8OToCU9QEEspbjcUz1TQ6g16ImLPrelIi9bbsB3UXfilqvqfNoj2bQ2BNbZ8akoCDzY0gCebMXpIoto8RtA" />
@@ -50,11 +51,8 @@
       <li class="active">
         <a href="/">Home</a>
       </li>
-        <li class="">
-          <a href="/pricing">Pricing <small>Demo</small></a>
-        </li>
       <li>
-        <a target="_blank" href="https://tailwind.bullettrain.co/docs">Documentation</a>
+        <a target="_blank" href="/docs">Documentation</a>
       </li>
       <li>
         <a target="_blank" href="https://blog.bullettrain.co">Blog</a>
@@ -109,10 +107,9 @@
         <div class="intro-text">Bullet Train saves you months of development by starting you off with all the features that are the same in every SaaS, so you can focus on what makes your app unique.</div>
 
         <div class="intro-buttons">
-          <a class="btn btn-primary bg-light-gradient btn-shadow-md" href="/pricing"><i class="ti-shopping-cart-full"></i><span>Buy</span></a>
+          <a class="btn btn-primary bg-light-gradient btn-shadow-md" href="/pricing"><i class="ti-shopping-cart-full"></i><span>Read More</span></a>
           <span class="intro-buttons-keep-together">
             <a class="btn btn-link" href="/pricing"><i class="ti-desktop"></i><span>Live Demo</span></a>
-              <a class="btn btn-link" href="https://calendly.com/bullettrain/introductions/02-01-2018" target="_blank"><i class="icon-phone"></i><span>Schedule a Call</span></a>
           </span>
         </div>
       </div>
@@ -150,43 +147,107 @@
   <div class="os-container">
     <div class="row no-gutters">
 
-      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+      <div class="col-xl-4 col-sm-6  feature-cell">
         <div class="feature-icon">
-          <i class="ti-bolt"></i>
+          <i class="fa-light fa-bolt"></i>
         </div>
-        <h6 class="feature-title">Powerful Code Generation</h6>
-        <div class="feature-text">We were tired of doing so much gruntwork just to spin up all the CRUD resources that made up our app, so we created Super Scaffolding. Inspired by Rails scaffolds, but does much, much more!</div>
+        <h6 class="feature-title">Next-Level Code Generation</h6>
+        <div class="feature-text">We were tired of doing so much gruntwork just to spin up all the CRUD resources that made up our app, so we created Super Scaffolding. Inspired by Rails scaffolds, but it does much, much more!</div>
           <div class="bottom-aligned-link">
           <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/934251715175395328">
             <i class="ti-video-camera pr-1"></i>
             <span>Watch The Demo</span>
-</a>          </div>
-      </div>
-      <div class="col-xl-4 col-sm-6 b-l b-t feature-cell">
-        <div class="feature-icon">
-          <i class="icon-diamond"></i>
+          </a>
         </div>
-        <h6 class="feature-title">Gorgeous UI Template</h6>
-        <div class="feature-text">Not only do we license a very beautiful admin template, but we&#39;ve done the days of work it took to integrate it into a Rails app. Just copy and paste the examples to quickly build a beautiful app!</div>
-          <div class="bottom-aligned-link">
-          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="http://light.pinsupreme.com">
-            <i class="ti-palette pr-1"></i>
-            <span>Browse the Template</span>
-</a>          </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r b-l b-t feature-cell">
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
         <div class="feature-icon">
-          <i class="icon-credit-card"></i>
+          <i class="fa-light fa-heart"></i>
         </div>
-        <h6 class="feature-title">Pricing Page &amp; Subscriptions</h6>
-        <div class="feature-text">We&#39;ve integrated our open source Koudoku Ruby gem to provide a complete Stripe Subscriptions implementation that allows you to monetize your service.</div>
-          <div class="bottom-aligned-link">
-          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/pricing">
-            <i class="ti-desktop pr-1"></i>
-            <span>See the Demo</span>
-</a>          </div>
+        <h6 class="feature-title">Gorgeous Theme (and Theme Engine)</h6>
+        <div class="feature-text">
+          Not only does Bullet Train come with a professional looking UI, but it's implemented on top of a theme engine, so switching the look and feel of your UI is as easy as changing a Ruby gem. (Literally, that's how you do it.)
+        </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r b-t feature-cell">
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-pen-field"></i>
+        </div>
+        <h6 class="feature-title">Rich Form Fields</h6>
+        <div class="feature-text">
+          Quickly reach for more than just text fields. Super Scaffolding draws from a rich library of fields, including button selectors, select elements with search, file uploads, color pickers, phone number fields, calendar date pickers, and more.
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-satellite-dish"></i>
+        </div>
+        <h6 class="feature-title">Outgoing Webhooks</h6>
+        <div class="feature-text">
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-brackets-curly"></i>
+        </div>
+        <h6 class="feature-title">REST API</h6>
+        <div class="feature-text">
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-cloud-arrow-up"></i>
+        </div>
+        <h6 class="feature-title">One-Click Heroku Deploy</h6>
+        <div class="feature-text">
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-moon"></i>
+        </div>
+        <h6 class="feature-title">Automatic Dark Mode</h6>
+        <div class="feature-text">
+          It's time. Bullet Train's themes and components all support dark mode out-of-the-box, according to the user's system settings.
+        </div>
+        <div class="bottom-aligned-link">
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-globe-stand"></i>
+        </div>
+        <h6 class="feature-title">Language Support</h6>
+        <div class="feature-text">
+          All strings, including those you create with Super Scaffolding, are fully extracted into I18N YAML files and ready to be translated into whichever languages you want to support.
+        </div>
+        <div class="bottom-aligned-link">
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 feature-cell">
+        <div class="feature-icon">
+          <i class="icon-control-forward"></i>
+        </div>
+        <h6 class="feature-title">Blazing Fast JS and CSS Pipeline</h6>
+        <div class="feature-text">
+          Bullet Train is built on top of the completely modern Rails JavaScript and CSS asset pipeline, pre-configured for esbuild and Tailwind CSS. Compile times are measured in hundredths of a second and deploy times to Heroku have been reduced by minutes.
+        </div>
+        <div class="bottom-aligned-link">
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="os-icon os-icon-fingerprint"></i>
         </div>
@@ -198,26 +259,33 @@
             <span>Try It Now</span>
 </a>          </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="icon-people"></i>
         </div>
         <h6 class="feature-title">Teams</h6>
         <div class="feature-text">Team support is a frequently requested feature for many SaaS businesses, but your users will be able to invite teammates to their account from day one.</div>
           <div class="bottom-aligned-link">
-          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/users/sign_in">
-            <i class="ti-desktop pr-1"></i>
-            <span>Try It Now</span>
-</a>          </div>
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://blog.bullettrain.co/teams-should-be-an-mvp-feature/">
+            <i class="ti-book pr-1"></i>
+            <span>Read More</span>
+          </a>
+        </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="icon-lock"></i>
         </div>
         <h6 class="feature-title">Security &amp; Permissions</h6>
-        <div class="feature-text">We&#39;ve pre-configured the CanCanCan Ruby gem so users are only able to access the data and features they&#39;re supposed to, including only accessing features they&#39;ve paid for.</div>
+        <div class="feature-text">We&#39;ve pre-configured the CanCanCan Ruby gem so users are only able to access the data and features they&#39;re supposed to. We've also introduced a new layer of abstraction that makes defining and managing these permissions sane.</div>
+        <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://github.com/bullet-train-co/bullet_train-roles">
+            <i class="ti-book pr-1"></i>
+            <span>Read More</span>
+          </a>
+        </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="icon-social-twitter"></i>
         </div>
@@ -229,7 +297,7 @@
             <span>Watch The Demo</span>
 </a>          </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="icon-magic-wand"></i>
         </div>
@@ -241,38 +309,42 @@
             <span>Try It Now</span>
 </a>          </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="icon-screen-smartphone"></i>
         </div>
         <h6 class="feature-title">Full Mobile-Responsiveness</h6>
         <div class="feature-text">Every single page and workflow your app starts out with has already been tested to make sure it&#39;s fully responsive and work great on all devices.</div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
-        <div class="feature-icon">
-          <i class="icon-wrench"></i>
-        </div>
-        <h6 class="feature-title">Bootstrap or Tailwind</h6>
-        <div class="feature-text">In addition to the fully featured Bootstrap template, we&#39;ve also ported its popular design into a Tailwind-based component system, staying faithful to the first principles of Tailwind CSS. It&#39;s a totally different repository.</div>
-          <div class="bottom-aligned-link">
-          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://tailwind.bullettrain.co/users/sign_up">
-            <i class="ti-desktop pr-1"></i>
-            <span>Try Tailwind CSS</span>
-</a>          </div>
-      </div>
-      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="os-icon os-icon-robot-2"></i>
         </div>
         <h6 class="feature-title">Complete Test Coverage</h6>
-        <div class="feature-text">So not only did we implement or integrate all of those things, we wrote a full suite of automated integration tests so you can be sure it never breaks.</div>
+        <div class="feature-text">So now only have we integrated all these third-party libraries and created all these first-party features, but we've also written a full suite of automated integration tests so you can be sure it never breaks.</div>
           <div class="bottom-aligned-link">
           <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/967466941551058944">
             <i class="ti-book pr-1"></i>
             <span>Read More</span>
 </a>          </div>
       </div>
-      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
+        <div class="feature-icon">
+          <span style="display: inline-block; transform: scaleX(-1);">
+          <i class="icon-cursor"></i>
+        </span>
+        </div>
+        <h6 class="feature-title">Point-and-Click System Tests</h6>
+        <div class="feature-text">
+          We've created a new system for writing and debugging system tests and makes writing new tests as easy as using your application in the browser.
+        </div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/967466941551058944">
+            <i class="ti-book pr-1"></i>
+            <span>Watch the Demo</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
           <i class="os-icon os-icon-grid-18"></i>
         </div>
@@ -355,16 +427,14 @@
   <div class="cta-desc">Picking a foundation for your next project is a big decision. We're here to help!</div>
   <div class="cta-btn">
 
-      <a class="mt-3 btn btn-primary btn-lg btn-rounded bg-light-gradient btn-no-border btn-shadow-lg" href="https://calendly.com/bullettrain/introductions/02-01-2018" target="_blank">
-        <span class="hidden-xs-down">Schedule a</span> <span>Call</span><i></i><i class="ml-3 icon-phone"></i>
-      </a> <br>
-
-    <a class="mt-4 btn btn-link btn-lg btn-rounded btn-no-border" href="mailto:ask@bullettrain.co" target="_blank">
-      <span class="hidden-xs-down">Ask by</span> <span>Email</span><i></i><i class="ml-3 icon-envelope-letter"></i>
-    </a> <br>
-
-    <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://tailwind.bullettrain.co/docs" target="_blank">
+    <a class="mt-3 btn btn-primary btn-lg btn-rounded bg-light-gradient btn-no-border btn-shadow-lg" style="margin-bottom: 15px;" href="/docs" target="_blank">
       <span class="hidden-xs-down">Read the Documentation</span> <span class="hidden-sm-up">Docs</span><i></i><i class="ml-3 icon-book-open"></i>
+    </a>
+
+    <br>
+
+    <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://savvycal.com/ac/bt" target="_blank">
+      <span class="hidden-xs-down">Schedule a</span> <span>Call</span><i></i><i class="ml-3 icon-phone"></i>
     </a>
 
   </div>
@@ -394,11 +464,31 @@
                   <p class="mt-0"><a href="https://twitter.com/andrewculver" style="color: #868686;">Bullet Train, Inc.</a></p>
 
                   <h6 class="heading-small mb-2" style="margin-top: 30px;">We Sponsor</h6>
-                  <p><a href="https://github.com/CanCanCommunity/cancancan" style="color: #868686;" target="_blank">CanCanCan</a> <br> <a href="https://github.com/omniauth/omniauth" style="color: #868686;" target="_blank">OmniAuth</a> <br> <a href="https://github.com/select2/select2" style="color: #868686;" target="_blank">Select2</a> <br> <a href="https://github.com/jackocnr/intl-tel-input" style="color: #868686;" target="_blank">intl-tel-input</a> <br> <a href="https://github.com/bullet-train-co/magic_test" style="color: #868686;" target="_blank">Magic Test</a> <br> <a href="https://magictest.dev" style="color: #868686;" target="_blank">Nice Partials</a></p>
+                  <p>
+                    <a href="https://rails.new" style="color: #868686;" target="_blank">rails.new</a>
+                    <br>
+                    <a href="https://github.com/CanCanCommunity/cancancan" style="color: #868686;" target="_blank">CanCanCan</a>
+                    <br>
+                    <a href="https://github.com/bullet-train-co/magic_test" style="color: #868686;" target="_blank">Magic Test</a>
+                    <br>
+                    <a href="https://magictest.dev" style="color: #868686;" target="_blank">Nice Partials</a>
+                  </p>
                 </div>
                 <div class="col-lg-4 padded">
                   <h6 class="heading-small text-blue mb-2" style="line-height: 120%;">Made With 💙 In</h6>
-                  <p><a href="https://en.wikipedia.org/wiki/Los_Angeles" style="color: #868686;" targe=""_new">Los Angeles, California</a> <br> <a href="https://en.wikipedia.org/wiki/Maceió" style="color: #868686;" target="_new">Maceió, Brasil</a> <br> <a href="https://en.wikipedia.org/wii//Osaka" style="color: #868686;" target="_new">日本大阪</a> <br> <a href="https://en.wikipedia.org/wiki/Ottawa" style="color: #868686;" target="_new">Ottawa, Canada</a></p>
+                  <p>
+                    <a href="https://en.wikipedia.org/wiki/Los_Angeles" style="color: #868686;" targe=""_new">Los Angeles, California</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wii//Osaka" style="color: #868686;" target="_new">日本大阪</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Melbourne" style="color: #868686;" targe=""_new">Melbourne, Australia</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Kathmandu" style="color: #868686;" target="_new">काठमाडौं, नेपाल</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Maceió" style="color: #868686;" target="_new">Maceió, Brasil</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Ottawa" style="color: #868686;" target="_new">Ottawa, Canada</a>
+                  </p>
                 </div>
                 <div class="col-lg-4 padded">
                   <h6 class="heading-small">Follow Us</h6>
@@ -417,7 +507,7 @@
     </div>
 
   </div>
-  
+
 </body>
   <script src="https://app.bentonow.com/9c5f0e1111a22b3448722f00bf538a1d.js"></script>
   <script>
