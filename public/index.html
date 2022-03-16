@@ -149,10 +149,12 @@
 
       <div class="col-xl-4 col-sm-6  feature-cell">
         <div class="feature-icon">
-          <i class="fa-light fa-bolt"></i>
+          <i class="fa-light fa-wand-magic-sparkles"></i>
         </div>
         <h6 class="feature-title">Next-Level Code Generation</h6>
-        <div class="feature-text">We were tired of doing so much gruntwork just to spin up all the CRUD resources that made up our app, so we created Super Scaffolding. Inspired by Rails scaffolds, but it does much, much more!</div>
+        <div class="feature-text">
+          Super Scaffolding allows you to generate production-ready views and resource controllers, but it does much, much more, including allowing you to add new fields to existing scaffolds.
+        </div>
           <div class="bottom-aligned-link">
           <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/934251715175395328">
             <i class="ti-video-camera pr-1"></i>
@@ -161,13 +163,23 @@
         </div>
       </div>
 
-      <div class="col-xl-4 col-sm-6  feature-cell">
+      <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
-          <i class="fa-light fa-heart"></i>
+          <i class="fa-light fa-paintbrush-pencil"></i>
         </div>
-        <h6 class="feature-title">Gorgeous Theme (and Theme Engine)</h6>
+        <h6 class="feature-title">Gorgeous Tailwind Theme</h6>
         <div class="feature-text">
-          Not only does Bullet Train come with a professional looking UI, but it's implemented on top of a theme engine, so switching the look and feel of your UI is as easy as changing a Ruby gem. (Literally, that's how you do it.)
+          Bullet Train comes with a professionally designed UI theme, implemented with our favorite: Tailwind CSS. It also serves as a great starting point for creating and distributing or selling your own themes.
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6 feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-gear"></i>
+        </div>
+        <h6 class="feature-title">Full Theme Engine</h6>
+        <div class="feature-text">
+          Our UI is built on top of a partial-based theme engine, so switching the look and feel of your UI is as easy as changing a Ruby gem. (Literally, that's how you do it.) It also leaves the door open to other CSS frameworks (like Bootstrap) and an entire theme ecosystem.
         </div>
       </div>
 
@@ -177,7 +189,17 @@
         </div>
         <h6 class="feature-title">Rich Form Fields</h6>
         <div class="feature-text">
-          Quickly reach for more than just text fields. Super Scaffolding draws from a rich library of fields, including button selectors, select elements with search, file uploads, color pickers, phone number fields, calendar date pickers, and more.
+          Super Scaffolding draws from a rich library of native HTML fields and JavaScript-powered fields, including button selectors, select elements with search, multi-select, file uploads, color pickers, phone number fields, calendar date pickers, and more.
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-sm-6  feature-cell">
+        <div class="feature-icon">
+          <i class="fa-light fa-bolt"></i>
+        </div>
+        <h6 class="feature-title">Simplest. Reactivity. Ever.</h6>
+        <div class="feature-text">
+          When data changes on the server, views update in the UI via ActionCable. Bullet Train pioneered an insanely simple and comprehensive approach to server-side reactivity that is now implemented and maintained as part of CableReady.
         </div>
       </div>
 
@@ -187,7 +209,7 @@
         </div>
         <h6 class="feature-title">Outgoing Webhooks</h6>
         <div class="feature-text">
-
+          Your users can build their own integrations by subscribing to be notified by webhook when data changes or actions take place in your application, including a full-blown debugging UI in-app.
         </div>
       </div>
 
@@ -197,7 +219,7 @@
         </div>
         <h6 class="feature-title">REST API</h6>
         <div class="feature-text">
-
+          Bullet Train includes an optional Grape-powered JSON:API-compliant REST API, and produces an OpenAPI schema, so you can auto-generate your API documentation and client libraries. Because Super Scaffolding is aware of it, your API always has feature parity with your web interface.
         </div>
       </div>
 
@@ -205,9 +227,15 @@
         <div class="feature-icon">
           <i class="fa-light fa-cloud-arrow-up"></i>
         </div>
-        <h6 class="feature-title">One-Click Heroku Deploy</h6>
+        <h6 class="feature-title">One-Click Deploy</h6>
         <div class="feature-text">
-
+          Bullet Train comes with a fully-loaded, production-ready <code>app.json</code> configuration, so you can click a button and deploy to Heroku today, and newer platforms like Render in the future. Want to try it?
+        </div>
+        <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="/docs/heroku">
+            <i class="ti ti-cloud-up pr-1"></i>
+            <span>Deploy to Heroku</span>
+          </a>
         </div>
       </div>
 
@@ -321,12 +349,9 @@
           <i class="os-icon os-icon-robot-2"></i>
         </div>
         <h6 class="feature-title">Complete Test Coverage</h6>
-        <div class="feature-text">So now only have we integrated all these third-party libraries and created all these first-party features, but we've also written a full suite of automated integration tests so you can be sure it never breaks.</div>
-          <div class="bottom-aligned-link">
-          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/967466941551058944">
-            <i class="ti-book pr-1"></i>
-            <span>Read More</span>
-</a>          </div>
+        <div class="feature-text">So not only have we integrated all these third-party libraries and created all these first-party features, but we've also written a full suite of automated system tests so you can be sure it never breaks.</div>
+        <div class="bottom-aligned-link">
+        </div>
       </div>
       <div class="col-xl-4 col-sm-6 feature-cell">
         <div class="feature-icon">
