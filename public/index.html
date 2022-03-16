@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>The Ruby on Rails SaaS Template | Bullet Train</title>
+
+<meta charset="utf-8" />
+<meta content="ie=edge" http-equiv="x-ua-compatible" />
+<meta content="bullet train ruby on rails saas template starter kit" name="keywords" />
+<meta content="Bullet Train is a Ruby on Rails SaaS-in-a-Box that saves developers months of effort and new founders tens of thousands of dollars." name="description" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta name="turbolinks-cache-control" content="no-cache">
+<link href="/assets/logo/favicon-eb41b93a78767eb1a1be09c9cc5b41f81d627606913795d6c5be9e95549f0997.png" rel="shortcut icon" />
+<link href="/assets/logo/logo-square-bg-97bdcd98ba4d267e0d6a7964ae6f0f38a2730095412c89d7e8dc9791009a6243.png" rel="apple-touch-icon" />
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hQu8OToCU9QEEspbjcUz1TQ6g16ImLPrelIi9bbsB3UXfilqvqfNoj2bQ2BNbZ8akoCDzY0gCebMXpIoto8RtA" />
+
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600" data-turbolinks-track="reload" />
+<script src="https://js.stripe.com/v3/" data-turbolinks-track="reload"></script>
+<script src="/packs/js/application-46a4e0cd65f1b22e6796.js" data-turbolinks-track="reload"></script>
+<link rel="stylesheet" media="all" href="/packs/css/application-52720d9e.css" data-turbolinks-track="reload" />
+
+
+
+
+
+
+  <script async src='https://r.wdfl.co/rw.js' data-rewardful='b8ad27'></script>
+
+<script src="//widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" media="all" href="/assets/public-e8947c578b305293a4b1fb1b24c034caf45761333e72b8016334e833509c3f25.css" data-turbolinks-track="reload" />
+  </head>
+<body class="">
+
+  <div class="all-wrapper">
+
+    <!-- is there some way we want to display these? -->
+    <div style="display: none;">
+    <div class="alert alert-warning"></div>
+    <div class="alert alert-danger"></div>
+    </div>
+
+    <div class="fade1">
+</div>
+<div class="desktop-menu menu-top-w menu-activated-on-hover">
+  <div class="menu-top-i os-container">
+    <ul class="main-menu">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+        <li class="">
+          <a href="/pricing">Pricing <small>Demo</small></a>
+        </li>
+      <li>
+        <a target="_blank" href="https://tailwind.bullettrain.co/docs">Documentation</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://blog.bullettrain.co">Blog</a>
+      </li>
+    </ul>
+    <ul class="small-menu">
+      <li>
+        <a href="/users/sign_in">Login <small>Demo</small></a>
+      </li>
+      <li>
+        <a class="highlight btn-fancy btn-shadow" href="/users/sign_up">Sign Up <small>Demo</small></a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu-w menu-mobile">
+    <div class="mobile-menu-holder color-scheme-dark menu-and-user">
+      <ul class="mobile-menu">
+        <li class="active">
+          <a href="/">Home</a>
+        </li>
+          <li class="">
+            <a href="/pricing">Pricing <small>Demo</small></a>
+          </li>
+        <li>
+          <a href="/users/sign_in">Login <small>Demo</small></a>
+        </li>
+        <li>
+          <a class="highlight" href="/users/sign_up">Sign Up <small>Demo</small></a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-menu-i">
+      <div class="mobile-logo-w">
+        <div class="logo-element">
+        </div>
+      </div>
+      <div class="mobile-menu-trigger">
+        <i class="os-icon os-icon-hamburger-menu-1">
+        </i></div>
+    </div>
+  </div>
+</div>
+
+    <div class="intro-w layout-v1" id="sectionIntro">
+  <div class="os-container">
+    <div class="fade2">
+    </div>
+    <div class="intro-i">
+      <div class="intro-description">
+        <h1 class="intro-heading text-brand-heading"><div class="d-inline-block text-nowrap">Bullet Train</div> is a <div class="d-inline-block text-nowrap">Ruby on Rails</div> <span class="text-nowrap text-light-gradient">SaaS-in-a-Box</span></h1>
+
+        <div class="intro-text">Bullet Train saves you months of development by starting you off with all the features that are the same in every SaaS, so you can focus on what makes your app unique.</div>
+
+        <div class="intro-buttons">
+          <a class="btn btn-primary bg-light-gradient btn-shadow-md" href="/pricing"><i class="ti-shopping-cart-full"></i><span>Buy</span></a>
+          <span class="intro-buttons-keep-together">
+            <a class="btn btn-link" href="/pricing"><i class="ti-desktop"></i><span>Live Demo</span></a>
+              <a class="btn btn-link" href="https://calendly.com/bullettrain/introductions/02-01-2018" target="_blank"><i class="icon-phone"></i><span>Schedule a Call</span></a>
+          </span>
+        </div>
+      </div>
+      <div class="intro-media">
+        <div class="shot shot1">
+          <div class="shot-i" style="background-image: url('/assets/homepage/pricing-small-b96b64d16f4a7ede8b89cab6a854a432f222f0fb2ffa972094d3ba35eac3f849.png')"></div>
+        </div>
+        <div class="shot shot2">
+          <div class="shot-i" style="background-image: url('/assets/homepage/sign-up-small-c7372f0be9c67646f4cc6552bf97b699a5b0a49be8dbc2e96632818ff2628d40.png')"></div>
+        </div>
+        <div class="shot shot3">
+          <div class="shot-i" style="background-image: url('/assets/clean_admin/front/intro_dash-85ffdaad14d6bbd4b8d53d2fa2cbb0d8928faf232b2939a06da458d2b90f781f.jpg')"></div>
+        </div>
+
+        <div class="hidden-md-up" style="margin-bottom: 40px;"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-header-w" id="sectionFeatures">
+  <div class="fade3">
+  </div>
+  <div class="os-container">
+    <div class="section-header">
+      <h5 class="section-sub-title">Stop recreating the wheel</h5>
+      <h2 class="section-title text-light-gradient text-brand-heading">We&#8217;ll Bring These Features</h2>
+      <div class="section-desc"></div>
+    </div>
+  </div>
+</div>
+<div class="features-table">
+  <div class="os-container">
+    <div class="row no-gutters">
+
+      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+        <div class="feature-icon">
+          <i class="ti-bolt"></i>
+        </div>
+        <h6 class="feature-title">Powerful Code Generation</h6>
+        <div class="feature-text">We were tired of doing so much gruntwork just to spin up all the CRUD resources that made up our app, so we created Super Scaffolding. Inspired by Rails scaffolds, but does much, much more!</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/934251715175395328">
+            <i class="ti-video-camera pr-1"></i>
+            <span>Watch The Demo</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-l b-t feature-cell">
+        <div class="feature-icon">
+          <i class="icon-diamond"></i>
+        </div>
+        <h6 class="feature-title">Gorgeous UI Template</h6>
+        <div class="feature-text">Not only do we license a very beautiful admin template, but we&#39;ve done the days of work it took to integrate it into a Rails app. Just copy and paste the examples to quickly build a beautiful app!</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="http://light.pinsupreme.com">
+            <i class="ti-palette pr-1"></i>
+            <span>Browse the Template</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r b-l b-t feature-cell">
+        <div class="feature-icon">
+          <i class="icon-credit-card"></i>
+        </div>
+        <h6 class="feature-title">Pricing Page &amp; Subscriptions</h6>
+        <div class="feature-text">We&#39;ve integrated our open source Koudoku Ruby gem to provide a complete Stripe Subscriptions implementation that allows you to monetize your service.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/pricing">
+            <i class="ti-desktop pr-1"></i>
+            <span>See the Demo</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r b-t feature-cell">
+        <div class="feature-icon">
+          <i class="os-icon os-icon-fingerprint"></i>
+        </div>
+        <h6 class="feature-title">User Account Management</h6>
+        <div class="feature-text">Users can sign-up, sign-in, and reset their password using a handtuned installation of the Devise Ruby gem.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/users/sign_in">
+            <i class="ti-desktop pr-1"></i>
+            <span>Try It Now</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+        <div class="feature-icon">
+          <i class="icon-people"></i>
+        </div>
+        <h6 class="feature-title">Teams</h6>
+        <div class="feature-text">Team support is a frequently requested feature for many SaaS businesses, but your users will be able to invite teammates to their account from day one.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/users/sign_in">
+            <i class="ti-desktop pr-1"></i>
+            <span>Try It Now</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+        <div class="feature-icon">
+          <i class="icon-lock"></i>
+        </div>
+        <h6 class="feature-title">Security &amp; Permissions</h6>
+        <div class="feature-text">We&#39;ve pre-configured the CanCanCan Ruby gem so users are only able to access the data and features they&#39;re supposed to, including only accessing features they&#39;ve paid for.</div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+        <div class="feature-icon">
+          <i class="icon-social-twitter"></i>
+        </div>
+        <h6 class="feature-title">Third-Party Integrations</h6>
+        <div class="feature-text">We&#39;ve included pre-baked workflows to allow your users sign up with or integrate after sign-up with Facebook, Twitter, Stripe, and over a hundred other third-party OAuth provider platforms.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/bullettrainco/status/971890025762766848">
+            <i class="ti-video-camera pr-1"></i>
+            <span>Watch The Demo</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
+        <div class="feature-icon">
+          <i class="icon-magic-wand"></i>
+        </div>
+        <h6 class="feature-title">Onboarding Workflows</h6>
+        <div class="feature-text">As part of our default sign-up process, we&#39;ve included a highly editable onboarding wizard that ensures you can step new customers through their setup process. Nothing magical, it&#39;s just Rails code!</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" href="/users/sign_in">
+            <i class="ti-desktop pr-1"></i>
+            <span>Try It Now</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-l feature-cell">
+        <div class="feature-icon">
+          <i class="icon-screen-smartphone"></i>
+        </div>
+        <h6 class="feature-title">Full Mobile-Responsiveness</h6>
+        <div class="feature-text">Every single page and workflow your app starts out with has already been tested to make sure it&#39;s fully responsive and work great on all devices.</div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
+        <div class="feature-icon">
+          <i class="icon-wrench"></i>
+        </div>
+        <h6 class="feature-title">Bootstrap or Tailwind</h6>
+        <div class="feature-text">In addition to the fully featured Bootstrap template, we&#39;ve also ported its popular design into a Tailwind-based component system, staying faithful to the first principles of Tailwind CSS. It&#39;s a totally different repository.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://tailwind.bullettrain.co/users/sign_up">
+            <i class="ti-desktop pr-1"></i>
+            <span>Try Tailwind CSS</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r b-l feature-cell">
+        <div class="feature-icon">
+          <i class="os-icon os-icon-robot-2"></i>
+        </div>
+        <h6 class="feature-title">Complete Test Coverage</h6>
+        <div class="feature-text">So not only did we implement or integrate all of those things, we wrote a full suite of automated integration tests so you can be sure it never breaks.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/967466941551058944">
+            <i class="ti-book pr-1"></i>
+            <span>Read More</span>
+</a>          </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 b-r feature-cell">
+        <div class="feature-icon">
+          <i class="os-icon os-icon-grid-18"></i>
+        </div>
+        <h6 class="feature-title">Future Updates</h6>
+        <div class="feature-text">We&#39;ve got a really cool system in place to ensure you&#39;ve got a great way to continue integrating our future improvements to Bullet Train into your own app.</div>
+          <div class="bottom-aligned-link">
+          <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px;" target="_blank" href="https://twitter.com/andrewculver/status/976502048173649920">
+            <i class="ti-book pr-1"></i>
+            <span>Read More</span>
+</a>          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="intro-w layout-v1" id="sectionIntro">
+  <div class="os-container">
+    <div class="fade2"></div>
+    <div class="intro-i" style="margin-top: -50px; height: inherit;">
+      <div class="intro-description" style="position: relative; top: 100px;">
+        <div style="margin-top: 50px;" class="hidden-md-down"></div>
+
+
+        <div class="section-header text-left p-2 hidden-md-up">
+                    <h5 class="section-sub-title">Ready to Ship?</h5>
+          <h2 class="section-title text-light-gradient text-brand-heading">You&#8217;ll Be In Great Company</h2>
+          <div class="section-desc">
+            Bullet Train has been helping developers and enterpreneurs quickly build and validate their ideas since 2017 and we're proud to be a part of their story, whether it was:
+
+            <ul class="checklist mt-3">
+              <li>bootstrapping to profitability</li>
+              <li>closing six-figure enterprise sales contracts</li>
+              <li>raising millions in seed funding</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="section-header text-left hidden-sm-down pr-5">
+                    <h5 class="section-sub-title">Ready to Ship?</h5>
+          <h2 class="section-title text-light-gradient text-brand-heading">You&#8217;ll Be In Great Company</h2>
+          <div class="section-desc">
+            Bullet Train has been helping developers and enterpreneurs quickly build and validate their ideas since 2017 and we're proud to be a part of their story, whether it was:
+
+            <ul class="checklist mt-3">
+              <li>bootstrapping to profitability</li>
+              <li>closing six-figure enterprise sales contracts</li>
+              <li>raising millions in seed funding</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="intro-media hidden-md-down">
+        <div class="shot shot2">
+          <a href="https://www.contentharmony.com/">
+            <div class="shot-i" style="background-image: url('/assets/homepage/examples/content-harmony-7649d87e079bef0a0c5dde032f787f0022881978b6a8f679b940949c31778d04.jpg')"></div>
+          </a>
+        </div>
+        <div class="shot shot3">
+          <div class="shot-i" style="background-image: url('/assets/homepage/examples/rails-ci-64203473896df3465e1d1175dd42c246ddef7bb96b6042fadca6500d7d7ab869.jpg')"></div>
+        </div>
+        <div class="shot shot4">
+          <a href="https://bentonow.com">
+            <div class="shot-i" style="transform: translate(5%, -16%); padding-bottom: 59%; width: 810px; background-image: url('/assets/homepage/examples/bento-839b862fe616a800bf11f5d3ef9fae79cd2cef6ff3a2c8ad6998654f08010591.jpg')"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="call-to-action">
+  <div style="margin-top: 75px;" class="hidden-md-up"></div>
+  <div style="margin-top: 200px;" class="hidden-sm-down"></div>
+
+  <h3 class="cta-header text-brand-heading">Have questions?</h3>
+  <div class="cta-desc">Picking a foundation for your next project is a big decision. We're here to help!</div>
+  <div class="cta-btn">
+
+      <a class="mt-3 btn btn-primary btn-lg btn-rounded bg-light-gradient btn-no-border btn-shadow-lg" href="https://calendly.com/bullettrain/introductions/02-01-2018" target="_blank">
+        <span class="hidden-xs-down">Schedule a</span> <span>Call</span><i></i><i class="ml-3 icon-phone"></i>
+      </a> <br>
+
+    <a class="mt-4 btn btn-link btn-lg btn-rounded btn-no-border" href="mailto:ask@bullettrain.co" target="_blank">
+      <span class="hidden-xs-down">Ask by</span> <span>Email</span><i></i><i class="ml-3 icon-envelope-letter"></i>
+    </a> <br>
+
+    <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://tailwind.bullettrain.co/docs" target="_blank">
+      <span class="hidden-xs-down">Read the Documentation</span> <span class="hidden-sm-up">Docs</span><i></i><i class="ml-3 icon-book-open"></i>
+    </a>
+
+  </div>
+</div>
+
+<div class="display-type">
+</div>
+
+
+
+    <div class="footer-w">
+      <div class="fade3">
+      </div>
+      <div class="os-container b-t">
+        <div class="footer-i" style="border: none;">
+          <div class="row">
+            <div class="col-sm-7 col-lg-5 padded">
+              <div class="logo-element" style="width: 91px; height: 39px; background-size: 91px 39px;"></div>
+              <h3 class="heading-big">Bullet Train</h3>
+              <h6 class="heading-small">The Ruby on Rails SaaS Template</h6>
+              <p>Bullet Train is a Ruby on Rails SaaS-in-a-Box that saves developers months of effort and new founders tens of thousands of dollars.</p>
+            </div>
+            <div class="col-sm-5 col-lg-7">
+              <div class="row">
+                <div class="col-lg-4 padded">
+                  <h6 class="heading-small mb-2">Developed By</h6>
+                  <p class="mt-0"><a href="https://twitter.com/andrewculver" style="color: #868686;">Bullet Train, Inc.</a></p>
+
+                  <h6 class="heading-small mb-2" style="margin-top: 30px;">We Sponsor</h6>
+                  <p><a href="https://github.com/CanCanCommunity/cancancan" style="color: #868686;" target="_blank">CanCanCan</a> <br> <a href="https://github.com/omniauth/omniauth" style="color: #868686;" target="_blank">OmniAuth</a> <br> <a href="https://github.com/select2/select2" style="color: #868686;" target="_blank">Select2</a> <br> <a href="https://github.com/jackocnr/intl-tel-input" style="color: #868686;" target="_blank">intl-tel-input</a> <br> <a href="https://github.com/bullet-train-co/magic_test" style="color: #868686;" target="_blank">Magic Test</a> <br> <a href="https://magictest.dev" style="color: #868686;" target="_blank">Nice Partials</a></p>
+                </div>
+                <div class="col-lg-4 padded">
+                  <h6 class="heading-small text-blue mb-2" style="line-height: 120%;">Made With 💙 In</h6>
+                  <p><a href="https://en.wikipedia.org/wiki/Los_Angeles" style="color: #868686;" targe=""_new">Los Angeles, California</a> <br> <a href="https://en.wikipedia.org/wiki/Maceió" style="color: #868686;" target="_new">Maceió, Brasil</a> <br> <a href="https://en.wikipedia.org/wii//Osaka" style="color: #868686;" target="_new">日本大阪</a> <br> <a href="https://en.wikipedia.org/wiki/Ottawa" style="color: #868686;" target="_new">Ottawa, Canada</a></p>
+                </div>
+                <div class="col-lg-4 padded">
+                  <h6 class="heading-small">Follow Us</h6>
+                  <ul class="social-links">
+                    <li><a href="https://twitter.com/bullettrainco" target="_blank"><i class="icon-social-twitter"></i></a></li>
+                    <li><a href="https://github.com/bullet-train-co" target="_blank"><i class="icon-social-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC0RUgvU8eGlYAoM6dQxTG5A" target="_blank"><i class="icon-social-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deep-footer" style="border: none;">&copy; 2022 Bullet Train, Inc., All Rights Reserved</div>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+  <script src="https://app.bentonow.com/9c5f0e1111a22b3448722f00bf538a1d.js"></script>
+  <script>
+  if (typeof($) != 'undefined') {
+    $(function() {
+
+      // // if you have their email address, identify the user.
+      // // do this before anything else.
+      // bento.identify('user@example.org');
+
+      // // you can log a custom event.
+      // bento.track("Some Action", {some_key: "Some Value"});
+
+      // // you can tag a visitor.
+      // bento.tag('Some Tag');
+
+      // at the very least, you need to log the page view like this.
+      bento.view();
+
+    });
+  }
+  </script>
+
+</html>
