@@ -69,4 +69,9 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  scope module: "public" do
+    get "docs", to: "home#docs"
+    get "docs/*page", to: "home#docs"
+  end
 end
