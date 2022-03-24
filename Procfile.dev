@@ -1,4 +1,4 @@
-web: bin/rails server -p 3000
+web: bundle exec rake bt:link && bin/rails server -p 3000
 worker: bundle exec sidekiq -t 25
 js: yarn build --watch
 light-js: yarn light:build --watch
