@@ -1,5 +1,3 @@
-<% raise @file.inspect %>
-
 <% @body = markdown(File.read(Rails.root.to_s + "/#{@file}").gsub('.md)', ')')) %>
 
 <% if @file == "tmp/gems/bullet_train/docs/index.md" %>
