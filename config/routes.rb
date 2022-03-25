@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   draw "devise"
   draw "sidekiq"
 
+  # TODO Move this into a `draw "heroku"` helper from BT.
+  constraints(:host => /herokuapp.com/) do
+    match "/(*path)" => redirect {|params, req| "#{ENV['BASE_URL']}/#{params[:path]}"},  via: [:get, :post]
+  end
+
   # This is helpful to have around when working with shallow routes and complicated model namespacing. We don't use this
   # by default, but sometimes Super Scaffolding will generate routes that use this for `only` and `except` options.
   # TODO Would love to get this out of the application routes file.
