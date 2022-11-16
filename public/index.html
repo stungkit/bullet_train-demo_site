@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Ruby on Rails SaaS Template | Bullet Train</title>
+
+    <meta charset="utf-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="bullet train ruby on rails saas template starter kit" name="keywords" />
+    <meta content="Bullet Train is a Ruby on Rails SaaS-in-a-Box that saves developers months of effort and new founders tens of thousands of dollars." name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="turbolinks-cache-control" content="no-cache" />
+    <link href="/assets/logo/favicon-eb41b93a78767eb1a1be09c9cc5b41f81d627606913795d6c5be9e95549f0997.png" rel="shortcut icon" />
+    <link href="/assets/logo/logo-square-bg-97bdcd98ba4d267e0d6a7964ae6f0f38a2730095412c89d7e8dc9791009a6243.png" rel="apple-touch-icon" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="hQu8OToCU9QEEspbjcUz1TQ6g16ImLPrelIi9bbsB3UXfilqvqfNoj2bQ2BNbZ8akoCDzY0gCebMXpIoto8RtA" />
+
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600" data-turbolinks-track="reload" />
+
+    <script src="https://kit.fontawesome.com/a536a00b24.js" crossorigin="anonymous"></script>
+
+    <script src="/packs/js/application-46a4e0cd65f1b22e6796.js" data-turbolinks-track="reload"></script>
+    <link rel="stylesheet" media="all" href="/packs/css/application-52720d9e.css" data-turbolinks-track="reload" />
+
+    <link rel="stylesheet" media="all" href="/assets/public-e8947c578b305293a4b1fb1b24c034caf45761333e72b8016334e833509c3f25.css" data-turbolinks-track="reload" />
+    <style>
+      .call-to-action {
+        zoom: 0.6;
+      }
+
+      @media only screen and (min-width: 720px) {
+        .call-to-action {
+          zoom: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="">
+    <div class="all-wrapper">
+      <!-- is there some way we want to display these? -->
+      <div style="display: none">
+        <div class="alert alert-warning"></div>
+        <div class="alert alert-danger"></div>
+      </div>
+
+      <div class="fade1"></div>
+      <div class="desktop-menu menu-top-w menu-activated-on-hover">
+        <div class="menu-top-i os-container">
+          <ul class="main-menu">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/docs">Documentation</a>
+            </li>
+            <li>
+              <a href="https://discord.gg/bullettrain">Discord</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://blog.bullettrain.co">Blog</a>
+            </li>
+          </ul>
+          <ul class="small-menu">
+            <li>
+              <a href="/users/sign_in">Login <small>Demo</small></a>
+            </li>
+            <li>
+              <a class="highlight btn-fancy btn-shadow" href="/users/sign_up">Sign Up <small>Demo</small></a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu-w menu-mobile">
+          <div class="mobile-menu-holder color-scheme-dark menu-and-user">
+            <ul class="mobile-menu">
+              <li class="active">
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/docs">Documentation</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://blog.bullettrain.co">Blog</a>
+              </li>
+              <li>
+                <a href="/users/sign_in">Login <small>Demo</small></a>
+              </li>
+              <li>
+                <a class="highlight" href="/users/sign_up">Sign Up <small>Demo</small></a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-i">
+            <div class="mobile-logo-w">
+              <div class="logo-element"></div>
+            </div>
+            <div class="mobile-menu-trigger">
+              <i class="os-icon os-icon-hamburger-menu-1"> </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-w layout-v1" id="sectionIntro">
+        <div class="os-container">
+          <div class="fade2"></div>
+          <div class="intro-i">
+            <div class="intro-description">
+              <h1 class="intro-heading text-brand-heading">
+                The
+                <div class="d-inline-block text-nowrap">Open Source</div>
+                <div class="d-inline-block text-nowrap">Ruby on Rails</div>
+                <span class="text-nowrap text-light-gradient">SaaS Framework</span>
+              </h1>
+
+              <div class="intro-text">
+                <strong>Bullet Train</strong> is an MIT-licensed
+                <strong class="text-light-gradient">Rails-based framework</strong>
+                that saves you months of development by starting you off with all the features that are the same in every product, so you can focus on what makes your app unique.
+              </div>
+
+              <div class="intro-buttons">
+                <a class="btn btn-primary bg-light-gradient btn-shadow-md" target="_blank" href="https://github.com/bullet-train-co/bullet_train"><i class="ti-github"></i><span>Clone the Starter Repo</span></a>
+                <span class="intro-buttons-keep-together">
+                  <a class="btn btn-link" href="/users/sign_up" target="_blank"><i class="ti-desktop"></i><span>Try Demo</span></a>
+                  <a class="btn btn-link" href="https://www.getrevue.co/profile/bullettrain" target="_blank"><i class="fa-light fa-envelope"></i><span>Join the Mailing List</span></a>
+                </span>
+              </div>
+            </div>
+            <div class="intro-media">
+              <div class="shot shot3">
+                <div class="shot-i" style="background-image: url('/assets/homepage/form.png')"></div>
+              </div>
+              <div class="shot shot2">
+                <div class="shot-i" style="background-image: url('/assets/homepage/sign-up-dark.png')"></div>
+              </div>
+              <div class="shot shot1">
+                <div class="shot-i" style="background-image: url('/assets/homepage/terminal.png')"></div>
+              </div>
+
+              <div class="hidden-md-up" style="margin-bottom: 40px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header-w" id="sectionFeatures">
+        <div class="fade3"></div>
+        <div class="os-container">
+          <div class="section-header" style="max-width: none">
+            <h5 class="section-sub-title">It's more than a "Rails SaaS Template"</h5>
+            <h2 class="section-title text-light-gradient text-brand-heading">Bullet Train is like &ldquo;Rails on Rails&rdquo;</h2>
+            <div class="section-desc"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-table">
+        <div class="os-container">
+          <div class="row no-gutters">
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-wand-magic-sparkles"></i>
+              </div>
+              <h6 class="feature-title">Next-Generation Scaffolding</h6>
+              <div class="feature-text">Super Scaffolding allows you to generate production-ready views and resource controllers, but it does much, much more, including allowing you to add new fields to existing scaffolds.</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="/docs/super-scaffolding">
+                  <i class="ti-book pr-1"></i>
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-fingerprint"></i>
+              </div>
+              <h6 class="feature-title">User Authentication</h6>
+              <div class="feature-text">Nothing new here! We've all been using Devise for ages, so why not standardize on it and wrap it in a beautiful theme so we can build bigger and better things?</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" href="/users/sign_in">
+                  <i class="ti-desktop pr-1"></i>
+                  <span>Try It Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-people-group"></i>
+              </div>
+              <h6 class="feature-title">Teams and Invitations</h6>
+              <div class="feature-text">
+                Teams are the kind of feature where if you don't implement them on day one, they're a real pain to add later. Bullet Train's support here is industry leading.
+              </div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://blog.bullettrain.co/teams-should-be-an-mvp-feature/">
+                  <i class="ti-book pr-1"></i>
+                  <span>Read More on our Blog</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-lock-keyhole"></i>
+              </div>
+              <h6 class="feature-title">Security and Permissions</h6>
+              <div class="feature-text">
+                We've weaved CanCanCan into the fabric of Bullet Train, so whether by web UI or REST API, users can only access the resources and features they're supposed to.
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-user-group-crown"></i>
+              </div>
+              <h6 class="feature-title">Roles</h6>
+              <div class="feature-text">
+                After years of pushing CanCanCan to the limit, we created another layer of abstraction on top of it to help simplify the definition and enforcement of custom user roles.
+              </div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://github.com/bullet-train-co/bullet_train-roles">
+                  <i class="ti-book pr-1"></i>
+                  <span>Read More</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-paintbrush-pencil"></i>
+              </div>
+              <h6 class="feature-title">Gorgeous Tailwind CSS Theme</h6>
+              <div class="feature-text">Bullet Train comes with a professionally designed UI theme, implemented with our favorite, Tailwind CSS. And because it's MIT licensed, it serves as a great starting point for creating, distributing, or selling your own Bullet Train themes.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-pen-field"></i>
+              </div>
+              <h6 class="feature-title">Rich Form Fields</h6>
+              <div class="feature-text">Bullet Train includes a rich library of native HTML fields and JavaScript-powered fields, including button selectors, select elements with search, multi-select, file uploads, color pickers, phone number fields, calendar date pickers, and more.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-moon"></i>
+              </div>
+              <h6 class="feature-title">Dark Mode</h6>
+              <div class="feature-text">Not important enough for most developers to spend time on, but you won't want to work on your own app in the evening without it. Bullet Train supports dark mode out of the box.</div>
+              <div class="bottom-aligned-link"></div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-gear"></i>
+              </div>
+              <h6 class="feature-title">Full Theme Engine</h6>
+              <div class="feature-text">Our UI is built on top of a partial-based theme engine, so switching the look and feel of your UI is as easy as changing a Ruby gem. (Literally, that's how you do it.) It also leaves the door open to other CSS frameworks (like Bootstrap) and an entire theme ecosystem.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-cloud-bolt"></i>
+              </div>
+              <h6 class="feature-title">Simplest. Reactivity. Ever.</h6>
+              <div class="feature-text">When data changes on the server, views update in the UI via ActionCable. Bullet Train pioneered an insanely simple approach to server-side reactivity that is now implemented and maintained as part of CableReady.</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://twitter.com/andrewculver/status/1425818534353903624?s=20&t=upM7Lw-w3hp632-WdcAE-w">
+                  <i class="ti-video-camera pr-1"></i>
+                  <span>Watch The Demo</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-brackets-curly"></i>
+              </div>
+              <h6 class="feature-title">REST API</h6>
+              <div class="feature-text">Bullet Train includes a Grape-powered JSON:API-compliant REST API. It also produces an OpenAPI schema, so you can auto-generate your API documentation and client libraries. And because Super Scaffolding is aware of it, your API always has feature parity with your web interface.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-satellite-dish"></i>
+              </div>
+              <h6 class="feature-title">Outgoing Webhooks</h6>
+              <div class="feature-text">Not only can your users build their own integrations by subscribing to receive webhook notifications when things happen in your application, but they can debug them via a rich in-app UI.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-globe-stand"></i>
+              </div>
+              <h6 class="feature-title">Language Support</h6>
+              <div class="feature-text">All strings, including those you create with Super Scaffolding, are fully extracted into I18N YAML files and ready to be translated into whichever languages you want to support.</div>
+              <div class="bottom-aligned-link"></div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-bolt"></i>
+              </div>
+              <h6 class="feature-title">Blazing Fast JS and CSS</h6>
+              <div class="feature-text">Bullet Train is built on top of the completely modern asset pipeline in Rails 7. It compiles JavaScript with the blazing fast esbuild and generates CSS with Tailwind's recommended PostCSS-only approach. Compile times are measured in hundredths of a second and deploy times to Heroku have been reduced by minutes.</div>
+              <div class="bottom-aligned-link"></div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-plug"></i>
+              </div>
+              <h6 class="feature-title">Third-Party Integrations</h6>
+              <div class="feature-text">We&#39;ve included pre-baked workflows to allow your users sign up with or integrate after sign-up with Facebook, Twitter, Stripe, and over a hundred other third-party OAuth provider platforms.</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://twitter.com/bullettrainco/status/971890025762766848">
+                  <i class="ti-video-camera pr-1"></i>
+                  <span>Watch The Demo</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-door-open"></i>
+              </div>
+              <h6 class="feature-title">Onboarding Workflows</h6>
+              <div class="feature-text">As part of our default sign-up process, we&#39;ve included a highly editable onboarding wizard that ensures you can step new customers through their setup process. Nothing magical, it&#39;s just Rails code!</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" href="/users/sign_in">
+                  <i class="ti-desktop pr-1"></i>
+                  <span>Try It Now</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-mobile-notch"></i>
+              </div>
+              <h6 class="feature-title">Full Mobile-Responsiveness</h6>
+              <div class="feature-text">Bullet Train pages and workflows are tested to make sure they're fully responsive and work great on all devices right out of the box.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-user-robot"></i>
+              </div>
+              <h6 class="feature-title">Complete Test Coverage</h6>
+              <div class="feature-text">It's one thing to integrate all these third-party libraries and first-party features, but it's another altogether to write a full suite of automated system tests to make sure it never breaks on you.</div>
+              <div class="bottom-aligned-link"></div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <span style="display: inline-block; transform: scaleX(-1)">
+                  <i class="fa-light fa-arrow-pointer"></i>
+                </span>
+              </div>
+              <h6 class="feature-title">Write System Tests In-Browser</h6>
+              <div class="feature-text">We've created a new system for writing and debugging system tests and makes writing new tests as easy as using your application in the browser. It's called Magic Test.</div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://twitter.com/andrewculver/status/1366062684802846721">
+                  <i class="ti-video-camera pr-1"></i>
+                  <span>Watch the Demo</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-fire"></i>
+              </div>
+              <h6 class="feature-title">Blazing Fast, Turn-Key CI</h6>
+              <div class="feature-text">The starter repository includes a <code>.circleci/config.yml</code> for CircleCI that supports <a href="https://knapsackpro.com" target="_blank">Knapsack Pro</a> out of the box, so your CI can run as fast as your one slowest test.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-eject"></i>
+              </div>
+              <h6 class="feature-title">Framework Override Workflow</h6>
+              <div class="feature-text">
+                Despite being distributed in Ruby gems, every aspect of Bullet Train is designed to be overriden and customized on a per-application basis. Our <code>bin/resolve</code> workflow makes it easy.
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-cloud-arrow-up"></i>
+              </div>
+              <h6 class="feature-title">One-Click Deploys</h6>
+              <div class="feature-text">
+                Bullet Train comes with a fully-loaded, production-ready <code>app.json</code> configuration, so you can click a button and deploy to Heroku today, and newer platforms like Render in the future. Want to try it?
+              </div>
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="/docs/heroku">
+                  <i class="ti ti-cloud-up pr-1"></i>
+                  <span>Deploy to Heroku</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-gift"></i>
+              </div>
+              <h6 class="feature-title">Future Updates</h6>
+              <div class="feature-text">Bullet Train is built by a remote team all over the world and we ship updates around the clock. Since our functionality is shipped as Ruby gems, upgrading your application is as easy as running <code>bundle update</code>.</div>
+              <div class="bottom-aligned-link"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header-w" id="sectionFeatures">
+        <div class="fade3"></div>
+        <div class="os-container">
+          <div class="section-header" style="max-width: none">
+            <h5 class="section-sub-title">But wait, there's more...</h5>
+            <h2 class="section-title text-light-gradient text-brand-heading">Go Even Further with Bullet Train Pro</h2>
+            <div class="section-desc"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-table">
+        <div class="os-container">
+          <div class="row no-gutters">
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-credit-card"></i>
+              </div>
+              <h6 class="feature-title">Subscriptions and Billing</h6>
+              <div class="feature-text">
+                Bullet Train's billing engine leverages payment provider checkout workflows and customer portals so we can focus on the application-level details like per-user or per-unit pricing and enforcing both hard and soft plan limits.
+              </div>
+
+              <div class="bottom-aligned-link">
+                <a class="btn btn-fancy btn-rounder bg-light-gradient-blue" style="margin-top: 20px" target="_blank" href="https://buy.stripe.com/28o8zg4dBbrd59u7sM">
+                  <i class="ti ti-credit-card pr-1"></i>
+                  <span>Early Access for Stripe</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-comments"></i>
+              </div>
+              <h6 class="feature-title">Real-Time Conversations</h6>
+              <div class="feature-text">Easily add real-time conversation threads throughout your application. Users get an in-app conversations inbox, email notifications, and can respond to threads via email.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-receipt"></i>
+              </div>
+              <h6 class="feature-title">In-App Audit Logs</h6>
+              <div class="feature-text">Leveraging the power of PaperTrail, we've built a user-facing activity log for resources, including team-level roll-ups.</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-square-kanban"></i>
+              </div>
+              <h6 class="feature-title">Kanban Boards</h6>
+              <div class="feature-text">We originally did this as a demo, but a lot of folks really wanted to use it, so now we make it available for that. You'd be surprised some of the places these boards have been used!</div>
+            </div>
+
+            <div class="col-xl-4 col-sm-6 feature-cell">
+              <div class="feature-icon">
+                <i class="fa-light fa-square-check"></i>
+              </div>
+              <h6 class="feature-title">Task Management</h6>
+              <div class="feature-text">Quickly and easily incorporate robust task management into your collaborative software. Just imagine what it can do for your onboarding!</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-w layout-v1" id="sectionIntro">
+        <div class="os-container">
+          <div class="fade2"></div>
+          <div class="intro-i" style="margin-top: -50px; height: inherit">
+            <div class="intro-description" style="position: relative; top: 100px">
+              <div style="margin-top: 50px" class="hidden-md-down"></div>
+
+              <div class="section-header text-left p-2 hidden-md-up">
+                <h5 class="section-sub-title">Ready to ship?</h5>
+                <h2 class="section-title text-light-gradient text-brand-heading">You&#8217;ll Be In Great Company</h2>
+                <div class="section-desc">
+                  Bullet Train has been helping developers and enterpreneurs quickly build and validate their ideas since 2017 and we're proud to be a part of their story, whether it was:
+
+                  <ul class="checklist mt-3">
+                    <li>bootstrapping to profitability</li>
+                    <li>closing six-figure enterprise sales contracts</li>
+                    <li>raising millions in seed funding</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="section-header text-left hidden-sm-down pr-5">
+                <h5 class="section-sub-title">When you're ready to ship</h5>
+                <h2 class="section-title text-light-gradient text-brand-heading">You&#8217;ll Be In Great Company</h2>
+                <div class="section-desc">
+                  Bullet Train has been helping developers and enterpreneurs quickly build and validate their ideas since 2017 and we're proud to be a part of their story, whether it was:
+
+                  <ul class="checklist mt-3">
+                    <li>bootstrapping to profitability</li>
+                    <li>closing six-figure enterprise sales contracts</li>
+                    <li>raising millions in seed funding</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="intro-media hidden-md-down">
+              <div class="shot shot2">
+                <a href="https://www.contentharmony.com/">
+                  <div class="shot-i" style="background-image: url('/assets/homepage/examples/content-harmony.jpg')"></div>
+                </a>
+              </div>
+              <div class="shot shot3">
+                <div class="shot-i" style="background-image: url('/assets/homepage/examples/rootly.jpg')"></div>
+              </div>
+              <div class="shot shot4">
+                <a href="https://bentonow.com">
+                  <div class="shot-i" style="transform: translate(5%, -16%); padding-bottom: 59%; width: 810px; background-image: url('/assets/homepage/examples/bento.jpg')"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call-to-action">
+        <div style="margin-top: 75px" class="hidden-md-up"></div>
+        <div style="margin-top: 200px" class="hidden-sm-down"></div>
+
+        <h3 class="cta-header text-brand-heading">Experience <div class="d-inline-block text-nowrap">Ruby on Rails</div> development on a new level</h3>
+        <div class="cta-btn">
+
+          <a class="mt-3 btn btn-primary btn-lg btn-rounded bg-light-gradient btn-no-border btn-shadow-lg" style="margin-bottom: 15px" href="https://github.com/bullet-train-co/bullet_train" target="_blank">
+            <span>Clone the Starter Repo</span>
+          </a>
+
+          <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="/docs" target="_blank">
+            <span>Read the Documentation</span>
+          </a>
+
+          <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://discord.gg/bullettrain" target="_blank">
+            <span>Join Us on Discord</span>
+          </a>
+
+          <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://www.getrevue.co/profile/bullettrain" target="_blank">
+            <span>Subscribe to the Newsletter</span>
+          </a>
+
+          <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://buy.stripe.com/4gw7vc5hFan959uaEN" target="_blank">
+            <span>Sponsor the Project</span>
+          </a>
+
+          <!--
+          <a class="mt-3 btn btn-link btn-lg btn-rounded btn-no-border" href="https://savvycal.com/ac/bt" target="_blank">
+            <span>Schedule a Consultation</span>
+          </a>
+          -->
+        </div>
+      </div>
+
+      <div class="display-type"></div>
+
+      <div class="footer-w">
+        <div class="fade3"></div>
+        <div class="os-container b-t">
+          <div class="footer-i" style="border: none">
+            <div class="row">
+              <div class="col-sm-7 col-lg-5 padded">
+                <div class="logo-element" style="width: 91px; height: 39px; background-size: 91px 39px"></div>
+                <h3 class="heading-big">Bullet Train</h3>
+                <h6 class="heading-small">The Ruby on Rails SaaS Template</h6>
+                <p>Bullet Train is a Ruby on Rails SaaS-in-a-Box that saves developers months of effort and new founders tens of thousands of dollars.</p>
+              </div>
+              <div class="col-sm-5 col-lg-7">
+                <div class="row">
+                  <div class="col-lg-4 padded">
+                    <h6 class="heading-small mb-2">Developed By</h6>
+                    <p class="mt-0">
+                      <a href="https://twitter.com/andrewculver" style="color: #868686">Bullet Train, Inc.</a>
+                    </p>
+
+                    <h6 class="heading-small mb-2" style="margin-top: 30px">We Sponsor</h6>
+                    <p>
+                      <a href="https://rails.new" style="color: #868686" target="_blank">rails.new</a>
+                      <br />
+                      <a href="https://github.com/CanCanCommunity/cancancan" style="color: #868686" target="_blank">CanCanCan</a>
+                      <br />
+                      <a href="https://github.com/bullet-train-co/magic_test" style="color: #868686" target="_blank">Magic Test</a>
+                      <br />
+                      <a href="https://magictest.dev" style="color: #868686" target="_blank">Nice Partials</a>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 padded">
+                    <h6 class="heading-small text-blue mb-2" style="line-height: 120%">Made With 💙 In</h6>
+                    <p>
+                      <a href="https://en.wikipedia.org/wiki/Los_Angeles" style="color: #868686" target="_new">Los Angeles, California</a>
+                      <br />
+                      <a href="https://en.wikipedia.org/wii//Osaka" style="color: #868686" target="_new">日本大阪</a>
+                      <br />
+                      <a href="https://en.wikipedia.org/wiki/Melbourne" style="color: #868686" target="_new">Melbourne, Australia</a>
+                      <br />
+                      <a href="https://en.wikipedia.org/wiki/Berlin" style="color: #868686" target="_new">Berlin, Deutschland</a>
+                      <br />
+                      <a href="https://en.wikipedia.org/wiki/Maceió" style="color: #868686" target="_new">Maceió, Brasil</a>
+                      <br />
+                      <a href="https://en.wikipedia.org/wiki/Ottawa" style="color: #868686" target="_new">Ottawa, Canada</a>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 padded">
+                    <h6 class="heading-small">Follow Us</h6>
+                    <ul class="social-links">
+                      <li>
+                        <a href="https://twitter.com/bullettrainco" target="_blank"><i class="icon-social-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/bullet-train-co" target="_blank"><i class="icon-social-github"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UC0RUgvU8eGlYAoM6dQxTG5A" target="_blank"><i class="icon-social-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deep-footer" style="border: none">&copy; 2022 Bullet Train, Inc., All Rights Reserved</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://app.bentonow.com/9c5f0e1111a22b3448722f00bf538a1d.js"></script>
+  <script>
+  if (typeof($) != 'undefined') {
+    $(function() {
+
+      // // if you have their email address, identify the user.
+      // // do this before anything else.
+      // bento.identify('user@example.org');
+
+      // // you can log a custom event.
+      // bento.track("Some Action", {some_key: "Some Value"});
+
+      // // you can tag a visitor.
+      // bento.tag('Some Tag');
+
+      // at the very least, you need to log the page view like this.
+      bento.view();
+
+    });
+  }
+  </script>
+</html>

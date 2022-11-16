@@ -1,8 +1,8 @@
 en:
   application:
     name: Untitled Application
-    owner: Unidentified Developer
-    description: "You can update this description in `config/locales/en/application.en.yml`."
-    keywords: untitled application seo keywords
-    support_email: change.me@localhost
+    owner: Bullet Train, Inc.
+    description: "An example Bullet Train application."
+    keywords: rails saas template
+    support_email: andrew@bullettrain.co
     key: untitled_application
