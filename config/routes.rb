@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   draw "devise"
   draw "sidekiq"
 
+  # We have to mount this manually for our demo site.
+  mount Showcase::Engine, at: "/docs/showcase"
+
   # TODO Move this into a `draw "heroku"` helper from BT.
   constraints(:host => /herokuapp.com/) do
     match "/(*path)" => redirect {|params, req| "#{ENV['BASE_URL']}/#{params[:path]}"},  via: [:get, :post]
