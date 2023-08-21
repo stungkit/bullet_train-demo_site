@@ -6,7 +6,7 @@ unless scaffolding_things_disabled?
       test "create a new tangible thing on a #{device_name} and update it" do
         resize_for(display_details)
 
-        visit root_path
+        visit user_session_path
 
         invitation_only? ? be_invited_to_sign_up : click_on("Don't have an account?")
         assert page.has_content?("Create Your Account")
@@ -20,6 +20,17 @@ unless scaffolding_things_disabled?
         page.select "Brisbane", from: "Your Time Zone"
         click_on "Next"
 
+        if billing_enabled?
+          unless freemium_enabled?
+            complete_pricing_page
+          end
+        end
+
+        visit edit_account_user_path(User.find_by!(email: "me@acme.com"))
+        page.select "Tokyo", from: "Your Time Zone"
+        click_on "Update Profile"
+        visit account_teams_path(Team.find_by!(name: "My Super Team"))
+
         click_on "Add New Creative Concept"
         fill_in "Name", with: "My Generic Creative Concept"
         fill_in "Description", with: "Dummy description for my creative concept"
@@ -32,6 +43,14 @@ unless scaffolding_things_disabled?
         click_on "Three"
         click_on "Four"
         click_on "Five"
+        page.all('input[id^="scaffolding_completely_concrete_tangible_thing_date_field_value"]').each do |el|
+          el.click
+        end
+        find(".daterangepicker").click_on("Apply")
+        page.all('input[id^="scaffolding_completely_concrete_tangible_thing_date_and_time_field_value"]').each do |el|
+          el.click
+        end
+        find(".daterangepicker").click_on("Apply")
         fill_in "Email Field Value", with: "me@acme.com"
         fill_in "Password Field Value", with: "secure-password"
         fill_in "Phone Field Value", with: "(201) 551-8321"
@@ -63,8 +82,9 @@ unless scaffolding_things_disabled?
         click_on "No"
         click_on "One"
         fill_in "Date Field Value", with: "02/17/2021"
-        fill_in "Email Field Value", with: "not-me@acme.com"
+        fill_in "Date and Time Field Value", with: "08/15/2023 8:00 PM"
 
+        fill_in "Email Field Value", with: "not-me@acme.com"
         fill_in "Password Field Value", with: "insecure-password"
         fill_in "Phone Field Value", with: "(231) 832-5512"
         page.select "Two", from: "Super Select Value"

@@ -4,17 +4,14 @@ Rails.application.routes.draw do
   draw "devise"
   draw "sidekiq"
 
-  # We have to mount this manually for our demo site.
-  mount Showcase::Engine, at: "/docs/showcase"
-
   # TODO Move this into a `draw "heroku"` helper from BT.
   constraints(:host => /herokuapp.com/) do
     match "/(*path)" => redirect {|params, req| "#{ENV['BASE_URL']}/#{params[:path]}"},  via: [:get, :post]
   end
 
+  # `collection_actions` is automatically super scaffolded to your routes file when creating certain objects.
   # This is helpful to have around when working with shallow routes and complicated model namespacing. We don't use this
   # by default, but sometimes Super Scaffolding will generate routes that use this for `only` and `except` options.
-  # TODO Would love to get this out of the application routes file.
   collection_actions = [:index, :new, :create] # standard:disable Lint/UselessAssignment
 
   # This helps mark `resources` definitions below as not actually defining the routes for a given resource, but just
@@ -79,7 +76,12 @@ Rails.application.routes.draw do
   end
 
   scope module: "public" do
-    get "docs", to: "home#docs"
-    get "docs/*page", to: "home#docs"
+    # We have to do these things manually for our demo site. The main `bullet_train` gem will automatically
+    # set up these routes for non-production environments, so we only set them up if we ARE in prod.
+    if Rails.env.production?
+      get "docs", to: "home#docs"
+      get "docs/*page", to: "home#docs"
+      mount Showcase::Engine, at: "/docs/showcase" if defined?(Showcase::Engine)
+    end
   end
 end
