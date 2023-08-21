@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   draw "sidekiq"
 
   # We have to mount this manually for our demo site.
-  mount Showcase::Engine, at: "/docs/showcase"
+  # TODO: Rails is complaining about this creating duplicate routes.
+  # It throws an error that prevents rails from running, so I'm commenting it out for now.
+  # mount Showcase::Engine, at: "/docs/showcase"
 
   # TODO Move this into a `draw "heroku"` helper from BT.
   constraints(:host => /herokuapp.com/) do
