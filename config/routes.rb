@@ -4,11 +4,6 @@ Rails.application.routes.draw do
   draw "devise"
   draw "sidekiq"
 
-  # We have to mount this manually for our demo site.
-  # TODO: Rails is complaining about this creating duplicate routes.
-  # It throws an error that prevents rails from running, so I'm commenting it out for now.
-  # mount Showcase::Engine, at: "/docs/showcase"
-
   # TODO Move this into a `draw "heroku"` helper from BT.
   constraints(:host => /herokuapp.com/) do
     match "/(*path)" => redirect {|params, req| "#{ENV['BASE_URL']}/#{params[:path]}"},  via: [:get, :post]
@@ -81,7 +76,12 @@ Rails.application.routes.draw do
   end
 
   scope module: "public" do
-    get "docs", to: "home#docs"
-    get "docs/*page", to: "home#docs"
+    # We have to do these things manually for our demo site. The main `bullet_train` gem will automatically
+    # set up these routes for non-production environments, so we only set them up if we ARE in prod.
+    if Rails.env.production?
+      get "docs", to: "home#docs"
+      get "docs/*page", to: "home#docs"
+      mount Showcase::Engine, at: "/docs/showcase" if defined?(Showcase::Engine)
+    end
   end
 end
