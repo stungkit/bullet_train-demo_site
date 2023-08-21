@@ -79,9 +79,9 @@ Rails.application.routes.draw do
     # We have to do these things manually for our demo site. The main `bullet_train` gem will automatically
     # set up these routes for non-production environments, so we only set them up if we ARE in prod.
     if Rails.env.production?
+      mount Showcase::Engine, at: "/docs/showcase" if defined?(Showcase::Engine)
       get "docs", to: "home#docs"
       get "docs/*page", to: "home#docs"
-      mount Showcase::Engine, at: "/docs/showcase" if defined?(Showcase::Engine)
     end
   end
 end
