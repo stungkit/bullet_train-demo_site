@@ -53,9 +53,16 @@ unless scaffolding_things_disabled?
       fill_in "Password Field Value", with: "secure-password"
       fill_in "Phone Field Value", with: "(201) 551-8321"
 
-      assert page.has_content? "State / Province"
+      assert_text "State / Province"
       select "Japan", from: "Country"
-      assert page.has_content? "Prefecture"
+      assert_text "Prefecture"
+      select "United States", from: "Country"
+      assert_text "State"
+
+      fill_in "Address", with: "123 Main St."
+      fill_in "City", with: "New York"
+      select "New York", from: "State"
+      fill_in "Zip code", with: "10001"
 
       select "One", from: "Super Select Value"
       select2_select "Multiple Super Select Values", ["Five", "Six"]
@@ -78,6 +85,10 @@ unless scaffolding_things_disabled?
       assert_text "One"
       assert_text "Five and Six"
       assert_text "Long text for this text area field"
+      assert_text "123 Main St."
+      assert_text "New York"
+      assert_text "UNITED STATES"
+      assert_text "10001"
 
       click_on "Edit Tangible Thing"
 
