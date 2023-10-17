@@ -111,6 +111,7 @@ jobs:
           CI_NODE_INDEX: ${{ matrix.ci_node_index }}
         continue-on-error: true
         run : ./bin/parallel-ci
+        shell: bash
 
       - name: Test Summary
         uses: test-summary/action@v2
