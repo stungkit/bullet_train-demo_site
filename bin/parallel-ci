@@ -12,4 +12,4 @@ tests = Dir["test/**/*_test.rb"].
     i % node_total.to_i == node_index.to_i
   end
 
-exec "bundle exec rails test #{tests.join(" ")}"
+system "bundle exec rails test #{tests.join(" ")}", exception: true
