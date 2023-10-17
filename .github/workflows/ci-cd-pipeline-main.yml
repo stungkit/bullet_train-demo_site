@@ -1,0 +1,25 @@
+name: "Main CI/CD Pipeline (prod)"
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  mini_test:
+    uses: ./.github/workflows/_run_tests.yml
+    secrets: inherit
+  super_scaffolding:
+    uses: ./.github/workflows/_run_super_scaffolding_tests.yml
+    secrets: inherit
+  standardrb:
+    uses: ./.github/workflows/_standardrb.yml
+    secrets: inherit
+  db_schema:
+    uses: ./.github/workflows/_database_schema_check.yml
+    secrets: inherit
+  deploy:
+    uses: ./.github/workflows/_deploy_heroku.yml
+    needs: [mini_test, super_scaffolding, standardrb, db_schema]
+    secrets: inherit
+    with:
+      heroku-app-name: "bullettrain-co"
