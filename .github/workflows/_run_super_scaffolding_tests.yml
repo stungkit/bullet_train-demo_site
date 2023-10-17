@@ -93,6 +93,10 @@ jobs:
       - name: Set up database schema
         run: bin/rails db:schema:load
 
+      - run: yarn install
+      - run: yarn build
+      - run: yarn build:css
+
       # TODO: This might be a bad idea. Maybe we should just have spring in the Gemfile all the time.
       - name: Allow adding of spring
         run: bundle config unset deployment
