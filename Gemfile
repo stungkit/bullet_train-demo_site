@@ -190,14 +190,11 @@ gem "active_hash"
 # A great debugger.
 gem "pry"
 
-# A great debugger.
-gem "pry"
-
 # We specify this gem here so that we can get the auto-generated links on headers in the docs
 # https://github.com/bullet-train-co/bullet_train-core/pull/468
 # Once commonmarker 1.x is no longer a pre-release we'll bump the main `bullet_train` dependency
 # and then we can remove this from our Gemfile.
-gem 'commonmarker', '~> 1.0.0.pre10'
+gem "commonmarker", "~> 1.0.0.pre10"
 
 # YOUR GEMS
 # You can add any Ruby gems you need below. By keeping them separate from our gems above, you'll avoid the likelihood

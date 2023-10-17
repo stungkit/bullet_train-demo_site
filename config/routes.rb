@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   draw "sidekiq"
 
   # TODO Move this into a `draw "heroku"` helper from BT.
-  constraints(:host => /herokuapp.com/) do
-    match "/(*path)" => redirect {|params, req| "#{ENV['BASE_URL']}/#{params[:path]}"},  via: [:get, :post]
+  constraints(host: /herokuapp.com/) do
+    match "/(*path)" => redirect { |params, req| "#{ENV["BASE_URL"]}/#{params[:path]}" }, :via => [:get, :post]
   end
 
   # `collection_actions` is automatically super scaffolded to your routes file when creating certain objects.
