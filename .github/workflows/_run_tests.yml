@@ -93,6 +93,10 @@ jobs:
       - name: Set up database schema
         run: bin/rails db:schema:load
 
+      - run: yarn install
+      - run: yarn build
+      - run: yarn build:css
+
       # Add or replace test runners here
       - name: Run Tests
         id: run-tests
