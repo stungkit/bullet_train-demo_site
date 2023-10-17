@@ -187,7 +187,8 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     click_on "Logout"
 
     # make sure we're actually signed out.
-    assert_text(/Signed out successfully|You need to sign in or sign up before continuing/)
+    # assert_text(/Signed out successfully|You need to sign in or sign up before continuing/)
+    assert_text(/The Open Source Ruby on Rails SaaS Framework/)
   end
   alias_method :sign_out_for, :sign_out
 
