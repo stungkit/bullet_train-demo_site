@@ -110,8 +110,7 @@ jobs:
           # Use the index from matrix as an environment variable
           CI_NODE_INDEX: ${{ matrix.ci_node_index }}
         continue-on-error: true
-        run : |
-          ./bin/parallel-ci
+        run : ./bin/parallel-ci
 
       - name: Test Summary
         uses: test-summary/action@v2
