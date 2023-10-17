@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: false
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         # Set N number of parallel jobs you want to run tests on.
         # Use higher number if you have slow tests to split them on more parallel jobs.
