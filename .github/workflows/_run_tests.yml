@@ -8,7 +8,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    continue-on-error: false
     strategy:
       fail-fast: true
       matrix:
@@ -109,7 +108,7 @@ jobs:
           CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
           # Use the index from matrix as an environment variable
           CI_NODE_INDEX: ${{ matrix.ci_node_index }}
-        continue-on-error: true
+        continue-on-error: false
         run : ./bin/parallel-ci
         shell: bash
 
