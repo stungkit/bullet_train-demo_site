@@ -1,6 +1,6 @@
 # This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
 # This workflow is pimarily meant to be called by other workflows.
-name: "⚗️  _Run super scaffolding tests"
+name: "⚗️ _Run super scaffolding tests"
 on:
   workflow_call:
   workflow_dispatch:
