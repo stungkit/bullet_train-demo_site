@@ -1,4 +1,4 @@
-name: "Create Version Bump PR For Core Gems & NPM Packages"
+name: "🚅 Create Version Bump PR For Core Gems & NPM Packages"
 
 on:
   workflow_dispatch:
