@@ -1,4 +1,4 @@
-name: 🦥 _Deploy Heroku
+name: 🏗 _Deploy Heroku
 
 on:
   workflow_call:
