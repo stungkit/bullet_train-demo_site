@@ -1,4 +1,4 @@
-name: "Main CI/CD Pipeline (prod)"
+name: "💻 Main CI/CD Pipeline (prod)"
 on:
   workflow_dispatch:
   push:
@@ -6,18 +6,23 @@ on:
 
 jobs:
   mini_test:
+    name: 🧪 MiniTest
     uses: ./.github/workflows/_run_tests.yml
     secrets: inherit
   super_scaffolding:
+    name: 🧪 Super Scaffolding Tests
     uses: ./.github/workflows/_run_super_scaffolding_tests.yml
     secrets: inherit
   standardrb:
+    name: 🔎 Standardrb
     uses: ./.github/workflows/_standardrb.yml
     secrets: inherit
   db_schema:
+    name: 🔎 DB Schema Check
     uses: ./.github/workflows/_database_schema_check.yml
     secrets: inherit
   deploy:
+    name: 🏗  Deploy to Heroku
     uses: ./.github/workflows/_deploy_heroku.yml
     needs: [mini_test, super_scaffolding, standardrb, db_schema]
     secrets: inherit
