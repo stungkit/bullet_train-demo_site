@@ -1,4 +1,4 @@
-name: "💻 Main CI/CD Pipeline (prod)"
+name: " 💻 Main CI/CD Pipeline (prod)"
 on:
   workflow_dispatch:
   push:
