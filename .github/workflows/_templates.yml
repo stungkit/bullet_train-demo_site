@@ -1,5 +1,5 @@
 # This is a dummy workflow that's just here to add a bit of organization to the workflow list
-name: "🚫 _-- Templates Below --_ 🚫"
+name: " 🚫 _-- Templates Below --_ 🚫"
 on:
   workflow_call:
 

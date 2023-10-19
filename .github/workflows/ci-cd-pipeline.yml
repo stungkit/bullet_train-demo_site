@@ -1,4 +1,4 @@
-name: "💻 PR CI/CD Pipeline (staging)"
+name: " 💻 PR CI/CD Pipeline (staging)"
 on:
   workflow_dispatch:
   pull_request:
