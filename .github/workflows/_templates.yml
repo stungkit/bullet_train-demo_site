@@ -3,4 +3,9 @@ name: "🦥--- Templates Below ---🦥"
 on:
   workflow_call:
 
-
+jobs:
+  nothing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
