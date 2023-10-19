@@ -16,7 +16,7 @@ jobs:
     secrets: inherit
   standardrb:
     name: 🔬 Standardrb
-    uses: ./.github/reusable_workflows/_standardrb.yml
+    uses: ./.github/workflows/_standardrb.yml
     secrets: inherit
   db_schema:
     name: 🔎 DB Schema Check
