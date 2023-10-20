@@ -1,4 +1,4 @@
-name: "Create Bullet Train Upgrade PR"
+name: " ↗️  Create Bullet Train Upgrade PR"
 on:
   workflow_dispatch:
     inputs:
