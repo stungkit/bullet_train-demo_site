@@ -1,5 +1,6 @@
-# This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
-# This workflow is pimarily meant to be called by other workflows.
+# This workflow runs the main test suite.
+#
+# This workflow is pimarily meant to be called by other workflows, but it can be run manually.
 name: "🧪 ~ Run tests"
 on:
   workflow_call:
@@ -51,7 +52,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # Add or replace dependency steps here
+
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
@@ -89,7 +90,6 @@ jobs:
             asset-cache-${{ runner.os }}-${{ github.ref }}-
             asset-cache-${{ runner.os }}-
 
-      # Add or replace database setup steps here
       - name: Set up database schema
         run: bin/rails db:schema:load
 
@@ -97,16 +97,12 @@ jobs:
       - run: yarn build
       - run: yarn build:css
 
-      # Add or replace test runners here
       - name: Run Tests
         id: run-tests
         env:
           AUTH_ENDPOINT: https://no-site.nowhere
           AWS_REGION: us-east-1
-          # Specifies how many jobs you would like to run in parallel,
-          # used for partitioning
           CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
-          # Use the index from matrix as an environment variable
           CI_NODE_INDEX: ${{ matrix.ci_node_index }}
         continue-on-error: false
         run : ./bin/parallel-ci
@@ -116,29 +112,4 @@ jobs:
         uses: test-summary/action@v2
         with:
           paths: "test/reports/**/TEST-*.xml"
-          #output: test-summary.md
         if: always()
-
-      #- name: Upload test summary
-        #uses: actions/upload-artifact@v3
-        #with:
-          #name: test-summary
-          #path: test-summary.md
-        #if: always()
-
-  #lint:
-    #runs-on: ubuntu-latest
-    #steps:
-      #- name: Checkout code
-        #uses: actions/checkout@v3
-      #- name: Install Ruby and gems
-        #uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
-        #with:
-          #bundler-cache: true
-      ## Add or replace any other lints here
-      #- name: Security audit dependencies
-        #run: bin/bundler-audit --update
-      #- name: Security audit application code
-        #run: bin/brakeman -q -w2
-      #- name: Lint Ruby files
-        #run: bin/rubocop --parallel

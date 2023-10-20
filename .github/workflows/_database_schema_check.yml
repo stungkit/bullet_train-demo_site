@@ -1,5 +1,6 @@
-# This workflow will run standardrb.
-# This workflow is pimarily meant to be called by other workflows.
+# This workflow will ensure that when we run `rails db:migrate` that no changes are made to `db/schema.rb`.
+#
+# This workflow is pimarily meant to be called by other workflows, but it can be run manually.
 name: "🔎 ~ Database Schema Check"
 on:
   workflow_call:
@@ -15,13 +16,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # Add or replace dependency steps here
+
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
-      # Add or replace test runners here
       - name: Database Schema Check
         id: db-schema-check
         run : bash ./.circleci/db_schema_check

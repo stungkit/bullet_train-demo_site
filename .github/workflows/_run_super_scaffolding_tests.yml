@@ -1,5 +1,6 @@
-# This workflow will install a prebuilt Ruby version, install dependencies, and run tests.
-# This workflow is pimarily meant to be called by other workflows.
+# This workflow will run a few super scaffolding commands and then run tests against the generated code.
+#
+# This workflow is pimarily meant to be called by other workflows, but it can be run manually.
 name: 🏗️ ~ Run super scaffolding tests
 on:
   workflow_call:
@@ -51,7 +52,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # Add or replace dependency steps here
+
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
@@ -89,7 +90,6 @@ jobs:
             asset-cache-${{ runner.os }}-${{ github.ref }}-
             asset-cache-${{ runner.os }}-
 
-      # Add or replace database setup steps here
       - name: Set up database schema
         run: bin/rails db:schema:load
 
@@ -122,5 +122,4 @@ jobs:
         uses: test-summary/action@v2
         with:
           paths: "test/reports/**/TEST-*.xml"
-          #output: test-summary.md
         if: always()
