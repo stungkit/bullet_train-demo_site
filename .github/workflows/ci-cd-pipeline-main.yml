@@ -14,16 +14,148 @@ on:
 jobs:
   mini_test:
     name: 🧪 MiniTest
-    uses: ./.github/workflows/_run_tests.yml
-    secrets: inherit
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Set identifiers for parallel jobs. These can be anything. Just include as many items as you want parallelism.
+        # For instance if you want a Three Amigos themed pipeline you could use:
+        # ci_node_index: [Dusty, Ned, Lucky]
+        ci_runners: [1,2,3,4]
+    services:
+      postgres:
+        image: postgres:11-alpine
+        ports:
+          - "5432:5432"
+        env:
+          POSTGRES_DB: rails_test
+          POSTGRES_USER: rails
+          POSTGRES_PASSWORD: password
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis
+        ports:
+          - "6379:6379"
+        # Set health checks to wait until redis has started
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      BUNDLE_JOBS: 2
+      BUNDLE_RETRY: 3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+          cache: 'yarn'
+
+      - name: asset cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            public/assets
+            tmp/cache/assets/sprockets
+          key: asset-cache-${{ runner.os }}-${{ github.ref }}-${{ github.sha }}
+          restore-keys: |
+            asset-cache-${{ runner.os }}-${{ github.ref }}-${{ github.sha }}
+            asset-cache-${{ runner.os }}-${{ github.ref }}-
+            asset-cache-${{ runner.os }}-
+
+      - name: Set up database schema
+        run: bin/rails db:schema:load
+
+      - run: yarn install
+      - run: yarn build
+      - run: yarn build:css
+
+      - name: Run Tests
+        id: run-tests
+        env:
+          AUTH_ENDPOINT: https://no-site.nowhere
+          AWS_REGION: us-east-1
+          CI_NODE_TOTAL: ${{ strategy.job-total }}
+          CI_NODE_INDEX: ${{ strategy.job-index }}
+        continue-on-error: false
+        run : ./bin/parallel-ci
+        shell: bash
+
+      - name: Test Summary
+        uses: test-summary/action@v2
+        with:
+          paths: "test/reports/**/TEST-*.xml"
+        if: always()
   standardrb:
     name: 🔬 Standardrb
-    uses: ./.github/workflows/_standardrb.yml
-    secrets: inherit
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      BUNDLE_JOBS: 2
+      BUNDLE_RETRY: 3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run Standardrb
+        id: run-standardrb
+        run : bundle exec standardrb
   db_schema:
     name: 🔎 DB Schema Check
-    uses: ./.github/workflows/_database_schema_check.yml
-    secrets: inherit
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:11-alpine
+        ports:
+          - "5432:5432"
+        env:
+          POSTGRES_DB: rails_test
+          POSTGRES_USER: rails
+          POSTGRES_PASSWORD: password
+        # Set health checks to wait until postgres has started
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      BUNDLE_JOBS: 2
+      BUNDLE_RETRY: 3
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Database Schema Check
+        id: db-schema-check
+        run : ./.circleci/db_schema_check
+        continue-on-error: false
   # If you'd like to auto-deploy to your production environment you can uncomment this next block.
   # You'll need to set HEROKU_EMAIL and HEROKU_API_KEY in your repo secrets.
   # Be sure to set the app name correctly below.
