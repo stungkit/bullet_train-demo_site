@@ -27,10 +27,10 @@ jobs:
   # If you'd like to auto-deploy to your production environment you can uncomment this next block.
   # You'll need to set HEROKU_EMAIL and HEROKU_API_KEY in your repo secrets.
   # Be sure to set the app name correctly below.
-  # deploy:
-  #   name: 🚢 Deploy to Heroku
-  #   uses: ./.github/workflows/_deploy_heroku.yml
-  #   needs: [mini_test, standardrb, db_schema]
-  #   secrets: inherit
-  #   with:
-  #     heroku-app-name: ""
+  deploy:
+    name: 🚢 Deploy to Heroku
+    uses: ./.github/workflows/_deploy_heroku.yml
+    needs: [mini_test, standardrb, db_schema]
+    secrets: inherit
+    with:
+      heroku-app-name: "bullettrain-co"
