@@ -5,15 +5,15 @@
 # If everything passes it can be set to auto-deploy to your production app on Heroku.
 #
 # This workflow is primarily meant to be triggered automatically, but it can be run manually.
-name: " 🎥 Main CI/CD Pipeline (prod)"
+name: " 🎥 Main CI (prod)"
 on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
 
 jobs:
-  mini_test:
-    name: 🧪 MiniTest
+  minitest:
+    name: 🧪 Minitest
     uses: ./.github/workflows/_run_tests.yml
     secrets: inherit
   standardrb:
