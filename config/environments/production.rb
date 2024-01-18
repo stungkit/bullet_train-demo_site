@@ -111,6 +111,8 @@ Rails.application.configure do
 
   if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
     config.active_storage.service = :amazon
+  else
+    config.active_storage.service = :local
   end
 
   config.action_mailer.perform_deliveries = true
