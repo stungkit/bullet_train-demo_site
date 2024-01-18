@@ -9,7 +9,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby(File.read(File.expand_path(".ruby-version", __dir__)))
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.0"
+gem "rails", "~> 7.1.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -65,7 +65,8 @@ group :development, :test do
 
   # Generate test objects.
   # 6.3.0 and 6.4.0 have a bug https://github.com/thoughtbot/factory_bot_rails/issues/433
-  gem "factory_bot_rails", "~> 6.2", "!= 6.3.0", "!= 6.4.0"
+  # And now 6.4.1 and 6.4.2 break some things: https://github.com/bullet-train-co/bullet_train-core/issues/707
+  gem "factory_bot_rails", "~> 6.2", "!= 6.3.0", "!= 6.4.0", "!= 6.4.1", "!= 6.4.2"
 end
 
 group :development do
@@ -81,6 +82,10 @@ group :development do
   # Workaround to get image process to behave on a Mac in development
   # https://github.com/libvips/ruby-vips/issues/155#issuecomment-1047370993
   gem "ruby-vips"
+
+  # Generate a diagram of all the models in the app by running:
+  # bundle exec erd
+  gem "rails-erd"
 end
 
 group :test do
@@ -103,7 +108,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.6.18"
+BULLET_TRAIN_VERSION = "1.6.26"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -134,6 +139,9 @@ gem "bullet_train-themes-tailwind_css", BULLET_TRAIN_VERSION
 gem "devise"
 gem "devise-two-factor"
 gem "rqrcode"
+
+# Admin panel
+gem "avo", ">= 3.1.7"
 
 group :development do
   # Open any sent emails in your browser instead of having to setup an SMTP trap.
@@ -186,6 +194,8 @@ group :production do
 
   # Use S3 for Active Storage by default.
   gem "aws-sdk-s3", require: false
+
+  gem "terser"
 end
 
 # Use Ruby hashes as readonly datasources for ActiveRecord-like models.

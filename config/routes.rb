@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   draw "concerns"
   draw "devise"
   draw "sidekiq"
+  draw "avo"
 
   # TODO Move this into a `draw "heroku"` helper from BT.
   constraints(host: /herokuapp.com/) do
