@@ -109,10 +109,10 @@ Rails.application.configure do
 
   config.active_job.queue_adapter = :sidekiq
 
-  if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
-    config.active_storage.service = :amazon
+  config.active_storage.service = if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
+    :amazon
   else
-    config.active_storage.service = :local
+    :local
   end
 
   config.action_mailer.perform_deliveries = true
