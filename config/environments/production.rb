@@ -109,10 +109,21 @@ Rails.application.configure do
 
   config.active_job.queue_adapter = :sidekiq
 
+<<<<<<< HEAD
   config.active_storage.service = if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
     :amazon
   else
     :local
+||||||| cd59fff
+  if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
+    config.active_storage.service = :amazon
+=======
+  if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
+    config.active_storage.service = :amazon
+  else
+    puts "WARNING! : We didn't find an active_storage.service configured so we're falling back to the local store, but it's A VERY BAD IDEA to rely on it in production unless you know what you're doing."
+    config.active_storage.service = :local
+>>>>>>> v1.6.27
   end
 
   config.action_mailer.perform_deliveries = true
