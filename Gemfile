@@ -92,6 +92,10 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara", "~> 3.39"
 
+  # Synchronize Capybara commands with client-side JavaScript and AJAX requests to greatly improve
+  # system test stability. Only works on the Selenium Driver though.
+  gem "capybara-lockstep"
+
   # Selenium is the default default Capybara driver for system tests that ships with
   # Rails. Cuprite is an alternative driver that uses Chrome's native DevTools protocol
   # and offers improved speed and reliability, but only works with Chrome. If you want
@@ -108,7 +112,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.6.27"
+BULLET_TRAIN_VERSION = "1.6.30"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
