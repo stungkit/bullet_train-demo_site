@@ -36,7 +36,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 5.2.0"
+gem "redis", "~> 5.3.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -115,7 +115,7 @@ gem "pagy", "< 7"
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.7.21"
+BULLET_TRAIN_VERSION = "1.7.23"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION

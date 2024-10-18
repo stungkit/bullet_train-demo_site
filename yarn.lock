@@ -1495,30 +1495,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bullet-train/bullet-train-sortable@npm:1.7.21":
-  version: 1.7.21
-  resolution: "@bullet-train/bullet-train-sortable@npm:1.7.21"
+"@bullet-train/bullet-train-sortable@npm:1.7.23":
+  version: 1.7.23
+  resolution: "@bullet-train/bullet-train-sortable@npm:1.7.23"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
     "@rails/request.js": "npm:^0.0.6"
     dragula: "npm:^3.7.3"
     jquery: "npm:^3.7.1"
-  checksum: 10c0/3e0f7025f46ebd76acab790c085ac0afbc85855bee881bc22f9c0fb33b9eb4c2c313e3fbabd5af08312d5f490f929d67c79c196e6badf9f09aa84f00bba0b759
+  checksum: 10c0/5c1c0fd0de546b2f04a76ebcf8e9205d10613a0548467efa1f05578b4009d8c9a2bfba909a675f165511b80a23f128eab33bc4e4d311f68a1393dbd73ea54525
   languageName: node
   linkType: hard
 
-"@bullet-train/bullet-train@npm:1.7.21":
-  version: 1.7.21
-  resolution: "@bullet-train/bullet-train@npm:1.7.21"
+"@bullet-train/bullet-train@npm:1.7.23":
+  version: 1.7.23
+  resolution: "@bullet-train/bullet-train@npm:1.7.23"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
-  checksum: 10c0/6c18810480629a3b1465448eb58ca976b3345aba4ce5774069158ed83f1a3d791b9adbdfb4681fc0815d5e34183615847eccd818d9ab632ced9a729a0572cffe
+  checksum: 10c0/10799e108c22a8c842664c2c9f428736c461939e13e464af1d514b5ed4c04037fa3706a9eb1bc85cd0030b7779db364783975c0cd1cad0c1add14b994104f575
   languageName: node
   linkType: hard
 
-"@bullet-train/fields@npm:1.7.21":
-  version: 1.7.21
-  resolution: "@bullet-train/fields@npm:1.7.21"
+"@bullet-train/fields@npm:1.7.23":
+  version: 1.7.23
+  resolution: "@bullet-train/fields@npm:1.7.23"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
     "@simonwep/pickr": "npm:^1.8.1"
@@ -1531,7 +1531,7 @@ __metadata:
     tributejs: "npm:^5.1.3"
     trix: "npm:^2.0.1"
     zxcvbn: "npm:^4.4.2"
-  checksum: 10c0/522112d41052a125594fc41467ea9fa3fd14a3ce029d9fad9ac31966dc316a5a2b34f46c6802d58cb55337942562c5f3ee9e82787a318e9f9be3d4d3a5dbbce9
+  checksum: 10c0/e413e8976a1d353af96bbb1fc69b3aeb13643cd0627957926dd00a11bfda7fcef815654774408e7d96b8b7d9893bf311121729d461261993ee48d352d76d44de
   languageName: node
   linkType: hard
 
@@ -1945,14 +1945,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/actiontext@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "@rails/actiontext@npm:7.2.0"
+"@rails/actiontext@npm:^7.2.100":
+  version: 7.2.100
+  resolution: "@rails/actiontext@npm:7.2.100"
   dependencies:
     "@rails/activestorage": "npm:>= 7.2.0-alpha"
   peerDependencies:
     trix: ^2.0.0
-  checksum: 10c0/22c3542d743b986a79dbd69f6ad556c4a25ba29be5a9439f2fb843699bbc40c7d5c5b2380f3ecacd8e5aff959af126c854ce9f0fa75d3df0c003f2c2d0c32029
+  checksum: 10c0/865e435bae635386688a7ba71958a02143f8cddc3a24dbf4915cda14ff7b5026bfaa420d0cd317e073a70c4f406b775a59dcbd40ee87f9259b6af577355e21a7
   languageName: node
   linkType: hard
 
@@ -1965,6 +1965,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rails/request.js@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@rails/request.js@npm:0.0.11"
+  checksum: 10c0/983f7278bed81d00f64e44183a4d3e3f98fd9488592da2f6446b1dc5ab89a466d1686722dce16d0c8defb4aba976bb2202885f84ab7bb3256768996f9aaea291
+  languageName: node
+  linkType: hard
+
 "@rails/request.js@npm:^0.0.6":
   version: 0.0.6
   resolution: "@rails/request.js@npm:0.0.6"
@@ -1972,37 +1979,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/request.js@npm:^0.0.9":
-  version: 0.0.9
-  resolution: "@rails/request.js@npm:0.0.9"
-  checksum: 10c0/a2a5fe0da8633fdeb6e884718dc9c1a84504cf195ae5c4840d175fec69ab7ab33d0c8f42df3f11cba1a1a37e9a3bbcaf2d12f60dfdf4f0273fe91d500b357a6e
+"@rails/ujs@npm:^7.1.400":
+  version: 7.1.400
+  resolution: "@rails/ujs@npm:7.1.400"
+  checksum: 10c0/181329e731b925788a530dc5bc44eb4a07ae780e20b0309fd9140ebeeca30d9432ed50be0f25ae60f10beb3aa8883f6d662e4b9c6f6cd19a32c1f42ab2505c47
   languageName: node
   linkType: hard
 
-"@rails/ujs@npm:^7.1.3":
-  version: 7.1.3
-  resolution: "@rails/ujs@npm:7.1.3"
-  checksum: 10c0/68112d9add9dbc59b40c2ec1bc095a67445c57d20d0ab7d817ce3de0cd90374e2690af8ad54ce6ecc2d1c748b34c0c44d0fbd2f515ce2c443d7c5d23d00b9ce5
-  languageName: node
-  linkType: hard
-
-"@redocly/ajv@npm:^8.11.0":
-  version: 8.11.0
-  resolution: "@redocly/ajv@npm:8.11.0"
+"@redocly/ajv@npm:^8.11.2":
+  version: 8.11.2
+  resolution: "@redocly/ajv@npm:8.11.2"
   dependencies:
     fast-deep-equal: "npm:^3.1.1"
     json-schema-traverse: "npm:^1.0.0"
     require-from-string: "npm:^2.0.2"
-    uri-js: "npm:^4.2.2"
-  checksum: 10c0/7ee77a8304b54189e903c30248282f81638e2bb7dcf8b7cb80e078966999c4de4eb6dabe6ac8406b5c8fe7a1443540e2bd0009d975ac285d38c2426157bc774d
+    uri-js-replace: "npm:^1.0.1"
+  checksum: 10c0/249ca2e237f7b1248ee1018ba1ad3a739cb9f16e5f7fe821875948806980d65246c79ef7d5e7bd8db773c120e2cd5ce15aa47883893608e1965ca4d45c5572f4
   languageName: node
   linkType: hard
 
 "@redocly/cli@npm:^1.0.0-beta.111":
-  version: 1.19.0
-  resolution: "@redocly/cli@npm:1.19.0"
+  version: 1.25.0
+  resolution: "@redocly/cli@npm:1.25.0"
   dependencies:
-    "@redocly/openapi-core": "npm:1.19.0"
+    "@redocly/openapi-core": "npm:1.25.0"
     abort-controller: "npm:^3.0.0"
     chokidar: "npm:^3.5.1"
     colorette: "npm:^1.2.0"
@@ -2024,23 +2024,23 @@ __metadata:
   bin:
     openapi: bin/cli.js
     redocly: bin/cli.js
-  checksum: 10c0/1903ab9202bc22f68c6c6bc744823c92bf9be23eb7cbf242e0ed207656f402a0b8ecfe5f94527273ef7defa02cf3244f07d89de473bc079db64bdbfde49d37f3
+  checksum: 10c0/2836ce08602bf63c48ada15f2137a729fbcdc8c1f61597f7e2c0194165e64105e0ee5d981b8b09d0e38384c53986865c7c4d0d874b6b2402939cf54a7beddc79
   languageName: node
   linkType: hard
 
-"@redocly/config@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@redocly/config@npm:0.7.0"
-  checksum: 10c0/ca5ae4dc4b031ada8b22a8c1ec49bedc4d3643779dbf5558e3dcd5f90dab7f962796b5c191897a3989656682dee0c833636cba551052d5f52ec8120f6e63b516
+"@redocly/config@npm:^0.10.1":
+  version: 0.10.1
+  resolution: "@redocly/config@npm:0.10.1"
+  checksum: 10c0/c9dc37578b19a97ceccf5a7ee38f772cfbbb81093f3d6b1714b46434616c8242403d64648e3e1b184b604f5740020baba4d95ec53446b05be89c1366b8a6cae1
   languageName: node
   linkType: hard
 
-"@redocly/openapi-core@npm:1.19.0, @redocly/openapi-core@npm:^1.4.0":
-  version: 1.19.0
-  resolution: "@redocly/openapi-core@npm:1.19.0"
+"@redocly/openapi-core@npm:1.25.0, @redocly/openapi-core@npm:^1.4.0":
+  version: 1.25.0
+  resolution: "@redocly/openapi-core@npm:1.25.0"
   dependencies:
-    "@redocly/ajv": "npm:^8.11.0"
-    "@redocly/config": "npm:^0.7.0"
+    "@redocly/ajv": "npm:^8.11.2"
+    "@redocly/config": "npm:^0.10.1"
     colorette: "npm:^1.2.0"
     https-proxy-agent: "npm:^7.0.4"
     js-levenshtein: "npm:^1.1.6"
@@ -2050,7 +2050,7 @@ __metadata:
     node-fetch: "npm:^2.6.1"
     pluralize: "npm:^8.0.0"
     yaml-ast-parser: "npm:0.0.43"
-  checksum: 10c0/f36340ea1c2a4f69d7653b4c08e494664a939e8087036f8dd57d93fb8fd0f0a0864eb499146aa614af9504d9f89f87eb8ea814d56f402baa1d0485faf269422c
+  checksum: 10c0/4d0c7348f2f6d67ebd3639fbfec334ab0193e5d8b94cf9ec4ee47e9aed23b9642482ac2f24dfafbe137d025adf58e1b8a204b383b96eb1a4985c024e3b85de3b
   languageName: node
   linkType: hard
 
@@ -2064,20 +2064,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/forms@npm:^0.5.7":
-  version: 0.5.7
-  resolution: "@tailwindcss/forms@npm:0.5.7"
+"@tailwindcss/forms@npm:^0.5.9":
+  version: 0.5.9
+  resolution: "@tailwindcss/forms@npm:0.5.9"
   dependencies:
     mini-svg-data-uri: "npm:^1.2.3"
   peerDependencies:
-    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
-  checksum: 10c0/cd29e0c978402ae87a923ae802dcff43f7b050595666cb067321cac2e37a52f61b9d73385cb0a10455548581ddd0d3886815bd6c64a1da06247c0057fa9f4601
+    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20"
+  checksum: 10c0/c7b99bc41ec548a27b68735ae459f5102535b3577020db3d9f348c88d997a623405e0833cf59beff5ca1bac7e7e2c55d5948ab374706277937e512e934947210
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.14":
-  version: 0.5.14
-  resolution: "@tailwindcss/typography@npm:0.5.14"
+"@tailwindcss/typography@npm:^0.5.15":
+  version: 0.5.15
+  resolution: "@tailwindcss/typography@npm:0.5.15"
   dependencies:
     lodash.castarray: "npm:^4.4.0"
     lodash.isplainobject: "npm:^4.0.6"
@@ -2085,7 +2085,7 @@ __metadata:
     postcss-selector-parser: "npm:6.0.10"
   peerDependencies:
     tailwindcss: "*"
-  checksum: 10c0/98e8309ca6e7a78a4b06530c217a781bed1a8a10375072b678b40b789bfa6e4dc0aeac83a22489ef2bf7ef2fc9a33bdcd3541ae1f4e60c27215bb7e462a31b0b
+  checksum: 10c0/bd1a1d0ab06816afe129a49cb8a693b4f6ffe77748f5279f07ea29ea9fcb44ef24d1f8b1cfcffaf41dd9cb60065745897cbfc9dcabc57c8a60ceb89d594c97c6
   languageName: node
   linkType: hard
 
@@ -2198,21 +2198,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:."
   dependencies:
-    "@bullet-train/bullet-train": "npm:1.7.21"
-    "@bullet-train/bullet-train-sortable": "npm:1.7.21"
-    "@bullet-train/fields": "npm:1.7.21"
+    "@bullet-train/bullet-train": "npm:1.7.23"
+    "@bullet-train/bullet-train-sortable": "npm:1.7.23"
+    "@bullet-train/fields": "npm:1.7.23"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@fullhuman/postcss-purgecss": "npm:6.0.0"
     "@hotwired/turbo-rails": "npm:^8.0.5"
     "@icon/themify-icons": "npm:^1.0.1-alpha.3"
     "@rails/actioncable": "npm:^7.1.3"
-    "@rails/actiontext": "npm:^7.2.0"
+    "@rails/actiontext": "npm:^7.2.100"
     "@rails/activestorage": "npm:^7.1.3"
-    "@rails/request.js": "npm:^0.0.9"
-    "@rails/ujs": "npm:^7.1.3"
+    "@rails/request.js": "npm:^0.0.11"
+    "@rails/ujs": "npm:^7.1.400"
     "@redocly/cli": "npm:^1.0.0-beta.111"
-    "@tailwindcss/forms": "npm:^0.5.7"
-    "@tailwindcss/typography": "npm:^0.5.14"
+    "@tailwindcss/forms": "npm:^0.5.9"
+    "@tailwindcss/typography": "npm:^0.5.15"
     autoprefixer: "npm:^10.4.20"
     cable_ready: "npm:^5.0.5"
     dragula: "npm:^3.7.3"
@@ -2226,7 +2226,7 @@ __metadata:
     postcss-nested: "npm:^6.2.0"
     stimulus-reveal: "npm:^1.4.2"
     stimulus-scroll-reveal: "npm:^3.2.0"
-    tailwindcss: "npm:^3.4.10"
+    tailwindcss: "npm:^3.4.11"
     yalc: "npm:^1.0.0-pre.53"
   languageName: unknown
   linkType: soft
@@ -4959,13 +4959,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"punycode@npm:^2.1.0":
-  version: 2.3.0
-  resolution: "punycode@npm:2.3.0"
-  checksum: 10c0/8e6f7abdd3a6635820049e3731c623bbef3fedbf63bbc696b0d7237fdba4cefa069bc1fa62f2938b0fbae057550df7b5318f4a6bcece27f1907fc75c54160bee
-  languageName: node
-  linkType: hard
-
 "purgecss@npm:^6.0.0":
   version: 6.0.0
   resolution: "purgecss@npm:6.0.0"
@@ -5780,9 +5773,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.10":
-  version: 3.4.10
-  resolution: "tailwindcss@npm:3.4.10"
+"tailwindcss@npm:^3.4.11":
+  version: 3.4.11
+  resolution: "tailwindcss@npm:3.4.11"
   dependencies:
     "@alloc/quick-lru": "npm:^5.2.0"
     arg: "npm:^5.0.2"
@@ -5809,7 +5802,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 10c0/5212f4d90f21fc21b87008570a37de46af9c955a7c197d0f0e1d888edd5ef597f1f41194bec6b1fdc8a21e9460089d370bf728ce39b13abe93324a768b7043fd
+  checksum: 10c0/b5bce27a6370e7a1c68a8c61db1e5379ccd14dcc5410149342f7742f45be0f2af72cbc0f3ac4e97535fc214d3f2546ade5edbb737f5b74d0a2431b8bb8e54b0d
   languageName: node
   linkType: hard
 
@@ -6046,12 +6039,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uri-js@npm:^4.2.2":
-  version: 4.4.1
-  resolution: "uri-js@npm:4.4.1"
-  dependencies:
-    punycode: "npm:^2.1.0"
-  checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
+"uri-js-replace@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "uri-js-replace@npm:1.0.1"
+  checksum: 10c0/0be6c972c84c316e29667628ce7b4ce4de7fc77cec9a514f70c4a3336eea8d1d783c71c9988ac5da333f0f6a85a04a7ae05a3c4aa43af6cd07b7a4d85c8d9f11
   languageName: node
   linkType: hard
 
