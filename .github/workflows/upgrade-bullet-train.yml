@@ -12,7 +12,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     env:
-      BUNDLE_DEPLOYMENT: 0
+      BUNDLE_DEPLOYMENT: "false"
     steps:
       - name: Create update PR
         uses: bullet-train-co/create-upgrade-pr@v1
