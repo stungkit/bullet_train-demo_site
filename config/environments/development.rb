@@ -82,11 +82,6 @@ Rails.application.configure do
   # if you want to change a default value specified here. Instead, simply re-specify the value in the section that
   # follows this section.
 
-  # TODO: Eventually we should enable this by default. Currently enabling it causes problems.
-  # Related issue: https://github.com/bullet-train-co/bullet_train-core/issues/926
-  # Once that issue has been resolved we should remove this comment block and the following config line.
-  config.action_controller.raise_on_missing_callback_actions = false
-
   # disable asset pipeline.
   config.assets.enabled = false
 
@@ -118,6 +113,13 @@ Rails.application.configure do
   # i don't plan on mailgun being the default for much longer, but since they're the default in the production
   # configuration right now, i'm making them the default here as well.
   config.action_mailbox.ingress = :mailgun
+
+  # Rails defaults to :local in development. Set any of these ENV vars to use non-local options.
+  if (ENV["AWS_ACCESS_KEY_ID"] || ENV["BUCKETEER_AWS_ACCESS_KEY_ID"]).present?
+    config.active_storage.service = :amazon
+  elsif ENV["CLOUDINARY_URL"].present?
+    config.active_storage.service = :cloudinary
+  end
 
   # ✅ YOUR APPLICATION'S CONFIGURATION
   # If you need to customize your application's configuration, this is the place to do it. This helps avoid merge
