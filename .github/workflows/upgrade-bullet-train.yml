@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create update PR
-        uses: bullet-train-co/create-upgrade-pr@beta
+        uses: bullet-train-co/create-upgrade-pr@v1
         with:
           versionNumber: ${{ inputs.versionNumber }}
           # If you don't have additional workflows that need to be triggered by the PR that we create
