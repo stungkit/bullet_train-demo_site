@@ -1495,30 +1495,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bullet-train/bullet-train-sortable@npm:1.12.2":
-  version: 1.12.2
-  resolution: "@bullet-train/bullet-train-sortable@npm:1.12.2"
+"@bullet-train/bullet-train-sortable@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@bullet-train/bullet-train-sortable@npm:1.12.3"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
     "@rails/request.js": "npm:^0.0.6"
     dragula: "npm:^3.7.3"
     jquery: "npm:^3.7.1"
-  checksum: 10c0/e6025df7314b9989f5cb4fda3958b7da36d995592e9ee7dd050a977967a7f8c2c5eaec36751ea5186918c36444dffa00dc26312b9af24a2e0c2ecc1da2387c4b
+  checksum: 10c0/7f8b168d5a499828deb6da197964461478f2091e2dfa7e06ddd1ad32721724b2ce44fdaac8dced13d6e43689a8d29bd5677b748e61dd3ad9ef2154b580677cd9
   languageName: node
   linkType: hard
 
-"@bullet-train/bullet-train@npm:1.12.2":
-  version: 1.12.2
-  resolution: "@bullet-train/bullet-train@npm:1.12.2"
+"@bullet-train/bullet-train@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@bullet-train/bullet-train@npm:1.12.3"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
-  checksum: 10c0/bf586b12fb3b935d5644c938394714fb7f0167533e78fb342f35867184f1771580e3719c484f6392b4c8fbe029e116acd4facf4cc2deae59b017a149a0146a3f
+  checksum: 10c0/a3e591ef9ca5f5d42a471165c5ad1fb90beb429643887a4f1dd05f2411134c0087874f7c13be76ebda451fa5e63d0fd2642a6c9ad167262e688fe1bc7fab1ab8
   languageName: node
   linkType: hard
 
-"@bullet-train/fields@npm:1.12.2":
-  version: 1.12.2
-  resolution: "@bullet-train/fields@npm:1.12.2"
+"@bullet-train/fields@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@bullet-train/fields@npm:1.12.3"
   dependencies:
     "@hotwired/stimulus": "npm:^3.0.1"
     "@simonwep/pickr": "npm:^1.8.1"
@@ -1531,7 +1531,7 @@ __metadata:
     tributejs: "npm:^5.1.3"
     trix: "npm:^2.0.1"
     zxcvbn: "npm:^4.4.2"
-  checksum: 10c0/2cefe313a71bb2b519c330e56e6cfc3be25945bdb76220c4ad6ca9c9f3a6619cdeaec97b46bd32c5e6c80598872a305eeeb3ee53ede969a2a6e14572e30f34a7
+  checksum: 10c0/81d2bc0c939477e94e7be647742fa987129475231b629817c256823f5355572fe29ef5e298dce44e542281d4b943b35b6eb794e7cb416fe2c84adbf995d62c7e
   languageName: node
   linkType: hard
 
@@ -1999,10 +1999,10 @@ __metadata:
   linkType: hard
 
 "@redocly/cli@npm:^1.0.0-beta.111":
-  version: 1.26.0
-  resolution: "@redocly/cli@npm:1.26.0"
+  version: 1.26.1
+  resolution: "@redocly/cli@npm:1.26.1"
   dependencies:
-    "@redocly/openapi-core": "npm:1.26.0"
+    "@redocly/openapi-core": "npm:1.26.1"
     abort-controller: "npm:^3.0.0"
     chokidar: "npm:^3.5.1"
     colorette: "npm:^1.2.0"
@@ -2024,7 +2024,7 @@ __metadata:
   bin:
     openapi: bin/cli.js
     redocly: bin/cli.js
-  checksum: 10c0/bb1d26459414a5166fec14c4788ff1074a01f604ed4f411baada362070bb8627004506c9864dc32b8ed35cba3bc68e7662ab4acd45a8e0aa70ca0318e0152587
+  checksum: 10c0/3a5f6bc1d414e2c327bc9e2f320c7a3fff91dad8530c6428fce94a62f3703ca5a05521567422e48897151d19ab64d8ae049213b5d4cd8dabc0a073b6969f3991
   languageName: node
   linkType: hard
 
@@ -2035,9 +2035,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redocly/openapi-core@npm:1.26.0, @redocly/openapi-core@npm:^1.4.0":
-  version: 1.26.0
-  resolution: "@redocly/openapi-core@npm:1.26.0"
+"@redocly/openapi-core@npm:1.26.1, @redocly/openapi-core@npm:^1.4.0":
+  version: 1.26.1
+  resolution: "@redocly/openapi-core@npm:1.26.1"
   dependencies:
     "@redocly/ajv": "npm:^8.11.2"
     "@redocly/config": "npm:^0.17.0"
@@ -2045,12 +2045,11 @@ __metadata:
     https-proxy-agent: "npm:^7.0.4"
     js-levenshtein: "npm:^1.1.6"
     js-yaml: "npm:^4.1.0"
-    lodash.isequal: "npm:^4.5.0"
     minimatch: "npm:^5.0.1"
     node-fetch: "npm:^2.6.1"
     pluralize: "npm:^8.0.0"
     yaml-ast-parser: "npm:0.0.43"
-  checksum: 10c0/d55989a3d2b343c5f5792c704f0e7b2030d739be65f80fb7ff4625f6cb189bb646003180ea605940014c5c77f9954c21cc36d371fa510775c25fbd5534311b0e
+  checksum: 10c0/191ea9c971c758843a428f8f46f282c4a797120d93e4a8de89cd6622e709b8c5daf26f2f9c51f96e66f94a2ccc677e2fc7c48f57be3447a18dd7b59753fb9cd4
   languageName: node
   linkType: hard
 
@@ -2100,6 +2099,13 @@ __metadata:
   version: 4.2.0
   resolution: "@types/stylis@npm:4.2.0"
   checksum: 10c0/c76c13e76ca485f598a13984cfb5e07bb88a851da5bee213587424a5f101f182c74f4f92d633cebf9abcec40ccebb645d600d184b7e4b42793e3eeca8729b110
+  languageName: node
+  linkType: hard
+
+"@types/trusted-types@npm:^2.0.7":
+  version: 2.0.7
+  resolution: "@types/trusted-types@npm:2.0.7"
+  checksum: 10c0/4c4855f10de7c6c135e0d32ce462419d8abbbc33713b31d294596c0cc34ae1fa6112a2f9da729c8f7a20707782b0d69da3b1f8df6645b0366d08825ca1522e0c
   languageName: node
   linkType: hard
 
@@ -2198,11 +2204,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:."
   dependencies:
-    "@bullet-train/bullet-train": "npm:1.12.2"
-    "@bullet-train/bullet-train-sortable": "npm:1.12.2"
-    "@bullet-train/fields": "npm:1.12.2"
+    "@bullet-train/bullet-train": "npm:1.12.3"
+    "@bullet-train/bullet-train-sortable": "npm:1.12.3"
+    "@bullet-train/fields": "npm:1.12.3"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@fullhuman/postcss-purgecss": "npm:7.0.2"
+    "@hotwired/stimulus": "npm:^3.2.2"
     "@hotwired/turbo-rails": "npm:^8.0.12"
     "@icon/themify-icons": "npm:^1.0.1-alpha.3"
     "@rails/actioncable": "npm:^7.1.3"
@@ -2226,7 +2233,8 @@ __metadata:
     postcss-nested: "npm:^7.0.2"
     stimulus-reveal: "npm:^1.4.2"
     stimulus-scroll-reveal: "npm:^3.2.0"
-    tailwindcss: "npm:^3.4.16"
+    tailwindcss: "npm:^3.4.17"
+    trix: "npm:^2.1.11"
     yalc: "npm:^1.0.0-pre.53"
   languageName: unknown
   linkType: soft
@@ -2843,6 +2851,18 @@ __metadata:
   version: 3.1.5
   resolution: "dompurify@npm:3.1.5"
   checksum: 10c0/8227fb1328c02d94f823de8cd499fca5ee07051e03e6b52bce06b592348aeb6e56ea8e2a4b0a9cfaeac7d623e4b5a52e4326aedf72596a6c2510b88dfcf2a2b6
+  languageName: node
+  linkType: hard
+
+"dompurify@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "dompurify@npm:3.2.3"
+  dependencies:
+    "@types/trusted-types": "npm:^2.0.7"
+  dependenciesMeta:
+    "@types/trusted-types":
+      optional: true
+  checksum: 10c0/0ce5cb89b76f396d800751bcb48e0d137792891d350ccc049f1bc9a5eca7332cc69030c25007ff4962e0824a5696904d4d74264df9277b5ad955642dfb6f313f
   languageName: node
   linkType: hard
 
@@ -4059,13 +4079,6 @@ __metadata:
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
   checksum: 10c0/762998a63e095412b6099b8290903e0a8ddcb353ac6e2e0f2d7e7d03abd4275fe3c689d88960eb90b0dde4f177554d51a690f22a343932ecbc50a5d111849987
-  languageName: node
-  linkType: hard
-
-"lodash.isequal@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "lodash.isequal@npm:4.5.0"
-  checksum: 10c0/dfdb2356db19631a4b445d5f37868a095e2402292d59539a987f134a8778c62a2810c2452d11ae9e6dcac71fc9de40a6fedcb20e2952a15b431ad8b29e50e28f
   languageName: node
   linkType: hard
 
@@ -5838,9 +5851,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.4.16":
-  version: 3.4.16
-  resolution: "tailwindcss@npm:3.4.16"
+"tailwindcss@npm:^3.4.17":
+  version: 3.4.17
+  resolution: "tailwindcss@npm:3.4.17"
   dependencies:
     "@alloc/quick-lru": "npm:^5.2.0"
     arg: "npm:^5.0.2"
@@ -5867,7 +5880,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 10c0/f716ff38e0ea6f25c2b3d811e0aaac07f627193e8527d8ad945d5088d4a188ac1eb1e8ee9aef76d8525e756ffbb8369d717013d3ffc2f49fabaa94cb1e6784c1
+  checksum: 10c0/cc42c6e7fdf88a5507a0d7fea37f1b4122bec158977f8c017b2ae6828741f9e6f8cb90282c6bf2bd5951fd1220a53e0a50ca58f5c1c00eb7f5d9f8b80dc4523c
   languageName: node
   linkType: hard
 
@@ -5944,6 +5957,15 @@ __metadata:
   version: 2.0.8
   resolution: "trix@npm:2.0.8"
   checksum: 10c0/b95f6e4c466863c656e4d64e757c53132dbfc07a2b19ce0aa84ac725211e0137aa8ae055298f248df461885122228c8b195082aa792ea85c9f79dfc068eb41db
+  languageName: node
+  linkType: hard
+
+"trix@npm:^2.1.11":
+  version: 2.1.11
+  resolution: "trix@npm:2.1.11"
+  dependencies:
+    dompurify: "npm:^3.2.3"
+  checksum: 10c0/ec52229a92e6d30f6cff1423578290215ea5e4219871a14963e23db9da45134b9b5b9ee6bebac4d0e1b038aae4af1ccd6add365b775582430bd61bdba5bcf086
   languageName: node
   linkType: hard
 
