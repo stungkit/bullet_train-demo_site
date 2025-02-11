@@ -117,7 +117,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.15.0"
+BULLET_TRAIN_VERSION = "1.16.0"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -132,7 +132,6 @@ gem "bullet_train-integrations-stripe", BULLET_TRAIN_VERSION
 
 # Optional support packages.
 gem "bullet_train-sortable", BULLET_TRAIN_VERSION
-gem "bullet_train-scope_questions", BULLET_TRAIN_VERSION
 gem "bullet_train-obfuscates_id", BULLET_TRAIN_VERSION
 
 # Core gems that are dependencies of gems listed above. Technically they
