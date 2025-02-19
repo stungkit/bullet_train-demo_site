@@ -121,7 +121,7 @@ BULLET_TRAIN_VERSION = "1.17.1"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
-gem "bullet_train-super_scaffolding", BULLET_TRAIN_VERSION
+gem "bullet_train-super_scaffolding", BULLET_TRAIN_VERSION, group: [:development, :test]
 gem "bullet_train-api", BULLET_TRAIN_VERSION
 gem "bullet_train-outgoing_webhooks", BULLET_TRAIN_VERSION
 gem "bullet_train-incoming_webhooks", BULLET_TRAIN_VERSION
