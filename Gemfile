@@ -36,7 +36,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 5.3.0"
+gem "redis", "~> 5.4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -117,7 +117,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.18.0"
+BULLET_TRAIN_VERSION = "1.19.0"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -243,7 +243,7 @@ gem "active_hash"
 
 # The bullet_train-action_models gem can use OpenAI during the CSV import process to
 # automatically match column names to database attributes.
-# https://github.com/sferik/openai-ruby
+# https://github.com/alexrudall/ruby-openai
 # gem "ruby-openai"
 
 # awesome_print allows us to `ap` our objects for a clean presentation of them.
