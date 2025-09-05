@@ -11,14 +11,14 @@ ruby(File.read(File.expand_path(".ruby-version", __dir__)))
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.0"
 
-# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
+gem "propshaft"
 
 # Use postgresql as the database for Active Record
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 6.0"
+gem "puma", "~> 7.0"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
@@ -117,7 +117,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.28.0"
+BULLET_TRAIN_VERSION = "1.29.0"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -224,9 +224,6 @@ group :production do
 
   # Use S3 for Active Storage by default.
   # gem "aws-sdk-s3", require: false
-
-  # terser is used to compress assets during precompilation
-  gem "terser"
 end
 
 # Use Ruby hashes as readonly datasources for ActiveRecord-like models.
