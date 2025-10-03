@@ -469,7 +469,7 @@ GEM
       date
       stringio
     public_suffix (6.0.1)
-    puma (7.0.0)
+    puma (7.0.4)
       nio4r (~> 2.0)
     pwned (2.4.1)
     racc (1.8.1)
@@ -671,6 +671,7 @@ PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-24
   x86_64-linux
 
 DEPENDENCIES
