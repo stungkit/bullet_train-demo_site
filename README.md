@@ -1,13 +1,26 @@
 # Bullet Train Application Template
 If you're new to Bullet Train, start with the [Bullet Train Developer Documentation](https://bullettrain.co/docs) and the [Getting Started](https://bullettrain.co/docs/getting-started) guide. You should also [join the community Discord server](https://discord.gg/gmfybM8kA6)!
 
+## Prerequisites
+
+### On macOS
+
+If you haven't already, install [Homebrew](https://brew.sh). We'll use it later to automatically install other dependencies, including:
+
+ - [rbenv](https://github.com/rbenv/rbenv) and [ruby-build](https://github.com/rbenv/ruby-build) for Ruby version management
+ - [nvm](https://github.com/nvm-sh/nvm) and [Yarn](https://yarnpkg.com) for Node version and package management
+ - [PostgreSQL](https://www.postgresql.org) as a relational database
+ - [Redis](https://redis.io) for Action Cable WebSockets and background job queues
+
+
 ## Building a New Application with Bullet Train
+
 If you're building a new application with Bullet Train, you don't want to "Fork" the template repository on GitHub. Instead, you should:
 
 1. Clone the template repository:
 
     ```
-    git clone git@github.com:bullet-train-co/bullet_train.git your_new_project_name
+    git clone https://github.com/bullet-train-co/bullet_train.git your_new_project_name
     ```
 
 2. Enter the project directory:
@@ -16,26 +29,84 @@ If you're building a new application with Bullet Train, you don't want to "Fork"
     cd your_new_project_name
     ```
 
-3. Run the configuration and setup scripts:
+4. If you're on macOS, you can use [Homebrew](https://brew.sh) to install all dependencies:
 
     ```
+    brew bundle
+    ```
+
+    Unfortunately when you install dependencies this way, Homebrew suppresses the additional set up instructions, so we've included those below.
+
+    ### Additional nvm configuration
+
+    If Homebrew is installing nvm for the first time, there are some additional steps you need to take:
+
+    ```
+    mkdir ~/.nvm
+    touch ~/.zshrc
+    open ~/.zshrc
+    ```
+
+    When the editor opens, paste the following into `~/.zshrc` and save:
+
+    ```
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+    ```
+
+    ### Additional rbenv configuration
+
+    If Homebrew is installing rbenv for the first time, there are some additional steps you need to take:
+
+    ```
+    rbenv init
+    rbenv install `cat .ruby-version`
+    ```
+
+    > ⚠️ You'll need to open a new shell before continuing. The easiest way to do this on macOS is hitting `⌘` + `T` to open a new tab in the same working directory.   
+
+    ### Additional PostgreSQL configuration
+
+    If Homebrew is installing PostgreSQL for the first time, there are some additional steps you need to take:
+
+    ```
+    brew services start postgresql@14
+    ```
+
+    ### Additional Redis configuration
+
+    If Homebrew is installing Redis for the first time, there are some additional steps you need to take:
+
+    ```
+    brew services start redis
+    ```
+
+6. Make sure Node.js is properly configured:
+
+    ```
+    source ~/.zshrc
+    nvm install
+    corepack enable
+    ```
+
+   > ⚠️ You'll need to open a new shell before continuing. The easiest way to do this on macOS is hitting `⌘` + `T` to open a new tab in the same working directory.
+
+7. Run the configuration and setup scripts:
+
+    ```
+    bundle install
     bin/configure
     bin/setup
     ```
     
-4. Boot your application:
+8. Boot your application:
 
     ```
     bin/dev
     ```
     
-5. Visit `http://localhost:3000`.
-
-## Cloud Development with Gitpod
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/bullet-train-co/bullet_train)
-
-Clicking this button will set up a new Bullet Train project for development on [Gitpod](https://gitpod.io).
+9. Visit `http://localhost:3000`.
 
 <br>
 <br>
@@ -105,3 +176,7 @@ If you're looking contribute to Bullet Train, you should "Fork" this template re
 ---
 
 This `README.md` file will be replaced with [`README.example.md`](./README.example.md) after running `bin/configure`.
+
+
+
+
