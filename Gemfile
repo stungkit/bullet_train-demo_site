@@ -117,7 +117,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.41.0"
+BULLET_TRAIN_VERSION = "1.42.1"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -144,7 +144,7 @@ gem "bullet_train-scope_validator", BULLET_TRAIN_VERSION
 gem "bullet_train-super_load_and_authorize_resource", BULLET_TRAIN_VERSION
 gem "bullet_train-themes-tailwind_css", BULLET_TRAIN_VERSION
 
-gem "devise"
+gem "devise", "~> 5.0"
 gem "devise-two-factor"
 gem "rqrcode"
 
@@ -184,6 +184,10 @@ group :development do
 end
 
 group :test do
+  # We're pinning this beause minitest-reporters 1.7.1 doesn't work with minitest 6.
+  # When a new version of minitest-reporters is released we should be able to unpin this.
+  gem "minitest", "~> 5.27.0"
+
   # Helps smooth over flakiness in system tests.
   gem "minitest-retry"
 
