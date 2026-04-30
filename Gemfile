@@ -9,7 +9,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby(File.read(File.expand_path(".ruby-version", __dir__)))
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.0"
+gem "rails", "~> 8.1.0"
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
@@ -18,7 +18,7 @@ gem "propshaft"
 gem "pg", ">= 0.18", "< 2.0"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 7.0"
+gem "puma", "~> 8.0"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
@@ -117,7 +117,7 @@ end
 
 # We use a constant here so that we can ensure that all of the bullet_train-*
 # packages are on the same version.
-BULLET_TRAIN_VERSION = "1.43.0"
+BULLET_TRAIN_VERSION = "1.44.0"
 
 # Core packages.
 gem "bullet_train", BULLET_TRAIN_VERSION
@@ -184,9 +184,7 @@ group :development do
 end
 
 group :test do
-  # We're pinning this beause minitest-reporters 1.7.1 doesn't work with minitest 6.
-  # When a new version of minitest-reporters is released we should be able to unpin this.
-  gem "minitest", "~> 5.27.0"
+  gem "minitest"
 
   # Helps smooth over flakiness in system tests.
   gem "minitest-retry"

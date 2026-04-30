@@ -1,29 +1,31 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (8.0.1)
-      actionpack (= 8.0.1)
-      activesupport (= 8.0.1)
+    action_text-trix (2.1.18)
+      railties
+    actioncable (8.1.3)
+      actionpack (= 8.1.3)
+      activesupport (= 8.1.3)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
       zeitwerk (~> 2.6)
-    actionmailbox (8.0.1)
-      actionpack (= 8.0.1)
-      activejob (= 8.0.1)
-      activerecord (= 8.0.1)
-      activestorage (= 8.0.1)
-      activesupport (= 8.0.1)
+    actionmailbox (8.1.3)
+      actionpack (= 8.1.3)
+      activejob (= 8.1.3)
+      activerecord (= 8.1.3)
+      activestorage (= 8.1.3)
+      activesupport (= 8.1.3)
       mail (>= 2.8.0)
-    actionmailer (8.0.1)
-      actionpack (= 8.0.1)
-      actionview (= 8.0.1)
-      activejob (= 8.0.1)
-      activesupport (= 8.0.1)
+    actionmailer (8.1.3)
+      actionpack (= 8.1.3)
+      actionview (= 8.1.3)
+      activejob (= 8.1.3)
+      activesupport (= 8.1.3)
       mail (>= 2.8.0)
       rails-dom-testing (~> 2.2)
-    actionpack (8.0.1)
-      actionview (= 8.0.1)
-      activesupport (= 8.0.1)
+    actionpack (8.1.3)
+      actionview (= 8.1.3)
+      activesupport (= 8.1.3)
       nokogiri (>= 1.8.5)
       rack (>= 2.2.4)
       rack-session (>= 1.0.1)
@@ -31,15 +33,16 @@ GEM
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
       useragent (~> 0.16)
-    actiontext (8.0.1)
-      actionpack (= 8.0.1)
-      activerecord (= 8.0.1)
-      activestorage (= 8.0.1)
-      activesupport (= 8.0.1)
+    actiontext (8.1.3)
+      action_text-trix (~> 2.1.15)
+      actionpack (= 8.1.3)
+      activerecord (= 8.1.3)
+      activestorage (= 8.1.3)
+      activesupport (= 8.1.3)
       globalid (>= 0.6.0)
       nokogiri (>= 1.8.5)
-    actionview (8.0.1)
-      activesupport (= 8.0.1)
+    actionview (8.1.3)
+      activesupport (= 8.1.3)
       builder (~> 3.1)
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
@@ -49,29 +52,29 @@ GEM
     active_link_to (1.0.5)
       actionpack
       addressable
-    activejob (8.0.1)
-      activesupport (= 8.0.1)
+    activejob (8.1.3)
+      activesupport (= 8.1.3)
       globalid (>= 0.3.6)
-    activemodel (8.0.1)
-      activesupport (= 8.0.1)
-    activerecord (8.0.1)
-      activemodel (= 8.0.1)
-      activesupport (= 8.0.1)
+    activemodel (8.1.3)
+      activesupport (= 8.1.3)
+    activerecord (8.1.3)
+      activemodel (= 8.1.3)
+      activesupport (= 8.1.3)
       timeout (>= 0.4.0)
-    activestorage (8.0.1)
-      actionpack (= 8.0.1)
-      activejob (= 8.0.1)
-      activerecord (= 8.0.1)
-      activesupport (= 8.0.1)
+    activestorage (8.1.3)
+      actionpack (= 8.1.3)
+      activejob (= 8.1.3)
+      activerecord (= 8.1.3)
+      activesupport (= 8.1.3)
       marcel (~> 1.0)
-    activesupport (8.0.1)
+    activesupport (8.1.3)
       base64
-      benchmark (>= 0.3)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.3.1)
       connection_pool (>= 2.2.5)
       drb
       i18n (>= 1.6, < 2)
+      json
       logger (>= 1.4.2)
       minitest (>= 5.1)
       securerandom (>= 0.3)
@@ -98,7 +101,6 @@ GEM
       zeitwerk (>= 2.6.12)
     base64 (0.2.0)
     bcrypt (3.1.22)
-    benchmark (0.4.0)
     benchmark-ips (2.14.0)
     bigdecimal (3.1.9)
     bindex (0.8.1)
@@ -107,7 +109,7 @@ GEM
     bootsnap (1.18.4)
       msgpack (~> 1.2)
     builder (3.3.0)
-    bullet_train (1.43.0)
+    bullet_train (1.44.0)
       bullet_train-fields
       bullet_train-has_uuid
       bullet_train-roles
@@ -129,7 +131,7 @@ GEM
       possessive
       rails (>= 7.0.0)
       showcase-rails
-    bullet_train-api (1.43.0)
+    bullet_train-api (1.44.0)
       bullet_train
       bullet_train-super_scaffolding
       doorkeeper
@@ -137,57 +139,57 @@ GEM
       jbuilder-schema (~> 2.6.6)
       pagy (~> 9)
       rails (>= 7.0.0)
-    bullet_train-fields (1.43.0)
+    bullet_train-fields (1.44.0)
       chronic
       cloudinary
       phonelib
       rails (>= 7.0.0)
-    bullet_train-has_uuid (1.43.0)
+    bullet_train-has_uuid (1.44.0)
       rails (>= 7.0.0)
-    bullet_train-incoming_webhooks (1.43.0)
+    bullet_train-incoming_webhooks (1.44.0)
       bullet_train
       bullet_train-api
       bullet_train-super_scaffolding
       rails (>= 7.0.0)
-    bullet_train-integrations (1.43.0)
+    bullet_train-integrations (1.44.0)
       rails (>= 7.0.0)
-    bullet_train-integrations-stripe (1.43.0)
+    bullet_train-integrations-stripe (1.44.0)
       omniauth (~> 2.0)
       omniauth-rails_csrf_protection (~> 1.0)
       omniauth-stripe-connect-v2
       rails (>= 7.0.0)
       stripe
-    bullet_train-obfuscates_id (1.43.0)
+    bullet_train-obfuscates_id (1.44.0)
       hashids
       rails (>= 7.0.0)
-    bullet_train-outgoing_webhooks (1.43.0)
+    bullet_train-outgoing_webhooks (1.44.0)
       public_suffix
       rails (>= 7.0.0)
-    bullet_train-roles (1.43.0)
+    bullet_train-roles (1.44.0)
       active_hash (~> 3.3.1)
       activesupport
       cancancan
-    bullet_train-scope_validator (1.43.0)
+    bullet_train-scope_validator (1.44.0)
       rails (>= 7.0.0)
-    bullet_train-sortable (1.43.0)
+    bullet_train-sortable (1.44.0)
       rails (>= 7.0.0)
-    bullet_train-super_load_and_authorize_resource (1.43.0)
+    bullet_train-super_load_and_authorize_resource (1.44.0)
       cancancan
       rails (>= 7.0.0)
-    bullet_train-super_scaffolding (1.43.0)
+    bullet_train-super_scaffolding (1.44.0)
       colorize
       indefinite_article
       masamune-ast (~> 2.0.2)
       rails (>= 7.0.0)
-    bullet_train-themes (1.43.0)
+    bullet_train-themes (1.44.0)
       bullet_train-fields
       nice_partials (~> 0.9)
       rails (>= 7.0.0)
-    bullet_train-themes-light (1.43.0)
+    bullet_train-themes-light (1.44.0)
       bullet_train-themes-tailwind_css
       masamune-ast (~> 2.0.2)
       rails (>= 7.0.0)
-    bullet_train-themes-tailwind_css (1.43.0)
+    bullet_train-themes-tailwind_css (1.44.0)
       bullet_train-themes
       rails (>= 7.0.0)
     cable_ready (5.0.6)
@@ -220,7 +222,7 @@ GEM
     choice (0.2.0)
     chronic (0.10.2)
     chunky_png (1.4.0)
-    cloudinary (2.4.4)
+    cloudinary (2.4.5)
       faraday (>= 2.0.1, < 3.0.0)
       faraday-follow_redirects (~> 0.5)
       faraday-multipart (~> 1.0, >= 1.0.4)
@@ -229,8 +231,8 @@ GEM
       sexp_processor
     coderay (1.1.3)
     colorize (1.1.0)
-    commonmarker (2.7.0-arm64-darwin)
-    commonmarker (2.7.0-x86_64-linux)
+    commonmarker (2.8.1-arm64-darwin)
+    commonmarker (2.8.1-x86_64-linux)
     concurrent-ruby (1.3.4)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -362,14 +364,14 @@ GEM
       net-imap
       net-pop
       net-smtp
-    marcel (1.0.4)
+    marcel (1.1.0)
     masamune-ast (2.0.2)
       activesupport
       prism (>= 0.14.0)
     matrix (0.4.2)
     memory_profiler (1.1.0)
-    meta-tags (2.22.1)
-      actionpack (>= 6.0.0, < 8.1)
+    meta-tags (2.23.0)
+      actionpack (>= 6.0.0)
     method_source (1.1.0)
     mini_histogram (0.3.1)
     mini_mime (1.1.5)
@@ -399,7 +401,7 @@ GEM
       net-protocol
     nice_partials (0.10.1)
       actionview (>= 4.2.6)
-    nio4r (2.7.4)
+    nio4r (2.7.5)
     nokogiri (1.18.1-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.1-x86_64-linux-gnu)
@@ -437,7 +439,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
-    phonelib (0.10.17)
+    phonelib (0.10.18)
     possessive (1.0.1)
     postmark (1.25.1)
       json
@@ -469,7 +471,7 @@ GEM
       date
       stringio
     public_suffix (6.0.1)
-    puma (7.0.4)
+    puma (8.0.1)
       nio4r (~> 2.0)
     pwned (2.4.1)
     racc (1.8.1)
@@ -488,20 +490,20 @@ GEM
     rackup (1.0.1)
       rack (< 3)
       webrick
-    rails (8.0.1)
-      actioncable (= 8.0.1)
-      actionmailbox (= 8.0.1)
-      actionmailer (= 8.0.1)
-      actionpack (= 8.0.1)
-      actiontext (= 8.0.1)
-      actionview (= 8.0.1)
-      activejob (= 8.0.1)
-      activemodel (= 8.0.1)
-      activerecord (= 8.0.1)
-      activestorage (= 8.0.1)
-      activesupport (= 8.0.1)
+    rails (8.1.3)
+      actioncable (= 8.1.3)
+      actionmailbox (= 8.1.3)
+      actionmailer (= 8.1.3)
+      actionpack (= 8.1.3)
+      actiontext (= 8.1.3)
+      actionview (= 8.1.3)
+      activejob (= 8.1.3)
+      activemodel (= 8.1.3)
+      activerecord (= 8.1.3)
+      activestorage (= 8.1.3)
+      activesupport (= 8.1.3)
       bundler (>= 1.15.0)
-      railties (= 8.0.1)
+      railties (= 8.1.3)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -522,13 +524,14 @@ GEM
       json
       require_all (~> 3.0)
       ruby-progressbar
-    railties (8.0.1)
-      actionpack (= 8.0.1)
-      activesupport (= 8.0.1)
+    railties (8.1.3)
+      actionpack (= 8.1.3)
+      activesupport (= 8.1.3)
       irb (~> 1.13)
       rackup (>= 1.0.0)
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
+      tsort (>= 0.2)
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
@@ -627,12 +630,13 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.2)
-    stripe (19.0.0)
+    stripe (19.1.0)
       bigdecimal
       logger
     thor (1.3.2)
     thread-local (1.1.0)
     timeout (0.4.3)
+    tsort (0.2.0)
     turbo-rails (2.0.11)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -646,10 +650,10 @@ GEM
     uri (1.0.2)
     useragent (0.16.11)
     version_gem (1.1.9)
-    view_component (3.21.0)
-      activesupport (>= 5.2.0, < 8.1)
-      concurrent-ruby (~> 1.0)
-      method_source (~> 1.0)
+    view_component (4.8.0)
+      actionview (>= 7.1.0)
+      activesupport (>= 7.1.0)
+      concurrent-ruby (~> 1)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
@@ -659,7 +663,8 @@ GEM
       railties (>= 6.0.0)
     webrick (1.9.1)
     websocket (1.2.11)
-    websocket-driver (0.7.6)
+    websocket-driver (0.8.0)
+      base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
@@ -677,23 +682,23 @@ DEPENDENCIES
   active_hash
   avo (>= 3.1.7)
   bootsnap
-  bullet_train (= 1.43.0)
-  bullet_train-api (= 1.43.0)
-  bullet_train-fields (= 1.43.0)
-  bullet_train-has_uuid (= 1.43.0)
-  bullet_train-incoming_webhooks (= 1.43.0)
-  bullet_train-integrations (= 1.43.0)
-  bullet_train-integrations-stripe (= 1.43.0)
-  bullet_train-obfuscates_id (= 1.43.0)
-  bullet_train-outgoing_webhooks (= 1.43.0)
-  bullet_train-roles (= 1.43.0)
-  bullet_train-scope_validator (= 1.43.0)
-  bullet_train-sortable (= 1.43.0)
-  bullet_train-super_load_and_authorize_resource (= 1.43.0)
-  bullet_train-super_scaffolding (= 1.43.0)
-  bullet_train-themes (= 1.43.0)
-  bullet_train-themes-light (= 1.43.0)
-  bullet_train-themes-tailwind_css (= 1.43.0)
+  bullet_train (= 1.44.0)
+  bullet_train-api (= 1.44.0)
+  bullet_train-fields (= 1.44.0)
+  bullet_train-has_uuid (= 1.44.0)
+  bullet_train-incoming_webhooks (= 1.44.0)
+  bullet_train-integrations (= 1.44.0)
+  bullet_train-integrations-stripe (= 1.44.0)
+  bullet_train-obfuscates_id (= 1.44.0)
+  bullet_train-outgoing_webhooks (= 1.44.0)
+  bullet_train-roles (= 1.44.0)
+  bullet_train-scope_validator (= 1.44.0)
+  bullet_train-sortable (= 1.44.0)
+  bullet_train-super_load_and_authorize_resource (= 1.44.0)
+  bullet_train-super_scaffolding (= 1.44.0)
+  bullet_train-themes (= 1.44.0)
+  bullet_train-themes-light (= 1.44.0)
+  bullet_train-themes-tailwind_css (= 1.44.0)
   capybara (~> 3.39)
   capybara-email
   capybara-lockstep
@@ -712,7 +717,7 @@ DEPENDENCIES
   knapsack_pro
   letter_opener
   magic_test
-  minitest (~> 5.27.0)
+  minitest
   minitest-reporters
   minitest-retry
   parallel_tests
@@ -721,10 +726,10 @@ DEPENDENCIES
   premailer-rails
   propshaft
   pry
-  puma (~> 7.0)
+  puma (~> 8.0)
   rack-cors
   rack-mini-profiler
-  rails (~> 8.0.0)
+  rails (~> 8.1.0)
   rails-erd
   rails_best_practices
   redis (~> 5.4.0)
